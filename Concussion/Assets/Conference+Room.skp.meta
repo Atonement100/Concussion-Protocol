@@ -1,0 +1,1439 @@
+fileFormatVersion: 2
+guid: 6aa4ec01faa344814a92bbcafd9d2785
+timeCreated: 1460255194
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e0100009f010000a0010000a1010000a2010000a3010000a4010000a5010000a6010000a7010000a8010000a9010000aa010000ab010000ac010000ad010000ae010000af010000b0010000b1010000b2010000b3010000b4010000b5010000b6010000b7010000b8010000b9010000ba010000bb010000bc010000bd010000be010000bf010000c0010000c1010000c2010000c3010000c4010000c5010000c6010000c7010000c8010000c9010000ca010000cb010000cc010000cd010000ce010000cf010000d0010000d1010000d2010000d3010000d4010000d5010000d6010000d7010000d8010000d9010000da010000db010000dc010000dd010000de010000df010000e0010000e1010000e2010000e3010000e4010000e5010000e6010000e7010000e8010000e9010000ea010000eb010000ec010000ed010000ee010000ef010000f0010000f1010000f2010000f3010000f4010000f5010000f6010000f7010000f8010000f9010000fa010000fb010000fc010000fd010000fe010000ff010000000200000102000002020000030200000402000005020000060200000702000008020000090200000a0200000b0200000c0200000d0200000e0200000f020000100200001102000012020000130200001402000015020000160200001702000018020000190200001a0200001b0200001c0200001d0200001e0200001f020000200200002102000022020000230200002402000025020000260200002702000028020000290200002a0200002b0200002c0200002d0200002e0200002f020000300200003102000032020000330200003402000035020000360200003702000038020000390200003a0200003b0200003c0200003d0200003e0200003f020000400200004102000042020000430200004402000045020000460200004702000048020000490200004a0200004b0200004c0200004d0200004e0200004f020000500200005102000052020000530200005402000055020000560200005702000058020000590200005a0200005b0200005c0200005d0200005e0200005f020000600200006102000062020000630200006402000065020000660200006702000068020000690200006a0200006b0200006c0200006d0200006e0200006f020000700200007102000072020000730200007402000075020000760200007702000078020000790200007a0200007b0200007c0200007d0200007e0200007f020000800200008102000082020000830200008402000085020000860200008702000088020000890200008a0200008b0200008c0200008d0200008e0200008f0200009002000091020000
+  assetHash:
+    serializedVersion: 2
+    Hash: 8a74ab4f372618a255dbce943059c169
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 2.9841847, y: 1.3001062, z: 5.0735855}
+      lookAt: {x: 17.33652, y: 0.7282445, z: 1.325881}
+      up: {x: 0.037273467, y: 0.99925774, z: -0.009732907}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bar
+    100002: bar 1
+    100004: bar 10
+    100006: bar 11
+    100008: bar 12
+    100010: bar 13
+    100012: bar 14
+    100014: bar 15
+    100016: bar 16
+    100018: bar 17
+    100020: bar 18
+    100022: bar 19
+    100024: bar 2
+    100026: bar 20
+    100028: bar 21
+    100030: bar 22
+    100032: bar 23
+    100034: bar 24
+    100036: bar 25
+    100038: bar 26
+    100040: bar 27
+    100042: bar 3
+    100044: bar 4
+    100046: bar 5
+    100048: bar 6
+    100050: bar 7
+    100052: bar 8
+    100054: bar 9
+    100056: chair_half1
+    100058: chair_half1 1
+    100060: chair_half1 10
+    100062: chair_half1 11
+    100064: chair_half1 12
+    100066: chair_half1 13
+    100068: chair_half1 14
+    100070: chair_half1 15
+    100072: chair_half1 16
+    100074: chair_half1 17
+    100076: chair_half1 18
+    100078: chair_half1 19
+    100080: chair_half1 2
+    100082: chair_half1 20
+    100084: chair_half1 21
+    100086: chair_half1 22
+    100088: chair_half1 23
+    100090: chair_half1 24
+    100092: chair_half1 25
+    100094: chair_half1 26
+    100096: chair_half1 27
+    100098: chair_half1 3
+    100100: chair_half1 4
+    100102: chair_half1 5
+    100104: chair_half1 6
+    100106: chair_half1 7
+    100108: chair_half1 8
+    100110: chair_half1 9
+    100112: chair_half2
+    100114: chair_half2 1
+    100116: chair_half2 10
+    100118: chair_half2 11
+    100120: chair_half2 12
+    100122: chair_half2 13
+    100124: chair_half2 14
+    100126: chair_half2 15
+    100128: chair_half2 16
+    100130: chair_half2 17
+    100132: chair_half2 18
+    100134: chair_half2 19
+    100136: chair_half2 2
+    100138: chair_half2 20
+    100140: chair_half2 21
+    100142: chair_half2 22
+    100144: chair_half2 23
+    100146: chair_half2 24
+    100148: chair_half2 25
+    100150: chair_half2 26
+    100152: chair_half2 27
+    100154: chair_half2 3
+    100156: chair_half2 4
+    100158: chair_half2 5
+    100160: chair_half2 6
+    100162: chair_half2 7
+    100164: chair_half2 8
+    100166: chair_half2 9
+    100168: Chair_Office_Fabric_Arms
+    100170: Chair_Office_Fabric_Arms 1
+    100172: Chair_Office_Fabric_Arms 10
+    100174: Chair_Office_Fabric_Arms 11
+    100176: Chair_Office_Fabric_Arms 12
+    100178: Chair_Office_Fabric_Arms 13
+    100180: Chair_Office_Fabric_Arms 2
+    100182: Chair_Office_Fabric_Arms 3
+    100184: Chair_Office_Fabric_Arms 4
+    100186: Chair_Office_Fabric_Arms 5
+    100188: Chair_Office_Fabric_Arms 6
+    100190: Chair_Office_Fabric_Arms 7
+    100192: Chair_Office_Fabric_Arms 8
+    100194: Chair_Office_Fabric_Arms 9
+    100196: chair_wheel
+    100198: chair_wheel 1
+    100200: chair_wheel 10
+    100202: chair_wheel 11
+    100204: chair_wheel 12
+    100206: chair_wheel 13
+    100208: chair_wheel 14
+    100210: chair_wheel 15
+    100212: chair_wheel 16
+    100214: chair_wheel 17
+    100216: chair_wheel 18
+    100218: chair_wheel 19
+    100220: chair_wheel 2
+    100222: chair_wheel 20
+    100224: chair_wheel 21
+    100226: chair_wheel 22
+    100228: chair_wheel 23
+    100230: chair_wheel 24
+    100232: chair_wheel 25
+    100234: chair_wheel 26
+    100236: chair_wheel 27
+    100238: chair_wheel 28
+    100240: chair_wheel 29
+    100242: chair_wheel 3
+    100244: chair_wheel 30
+    100246: chair_wheel 31
+    100248: chair_wheel 32
+    100250: chair_wheel 33
+    100252: chair_wheel 34
+    100254: chair_wheel 35
+    100256: chair_wheel 36
+    100258: chair_wheel 37
+    100260: chair_wheel 38
+    100262: chair_wheel 39
+    100264: chair_wheel 4
+    100266: chair_wheel 40
+    100268: chair_wheel 41
+    100270: chair_wheel 42
+    100272: chair_wheel 43
+    100274: chair_wheel 44
+    100276: chair_wheel 45
+    100278: chair_wheel 46
+    100280: chair_wheel 47
+    100282: chair_wheel 48
+    100284: chair_wheel 49
+    100286: chair_wheel 5
+    100288: chair_wheel 50
+    100290: chair_wheel 51
+    100292: chair_wheel 52
+    100294: chair_wheel 53
+    100296: chair_wheel 54
+    100298: chair_wheel 55
+    100300: chair_wheel 56
+    100302: chair_wheel 57
+    100304: chair_wheel 58
+    100306: chair_wheel 59
+    100308: chair_wheel 6
+    100310: chair_wheel 60
+    100312: chair_wheel 61
+    100314: chair_wheel 62
+    100316: chair_wheel 63
+    100318: chair_wheel 64
+    100320: chair_wheel 65
+    100322: chair_wheel 66
+    100324: chair_wheel 67
+    100326: chair_wheel 68
+    100328: chair_wheel 69
+    100330: chair_wheel 7
+    100332: chair_wheel 8
+    100334: chair_wheel 9
+    100336: //RootNode
+    100338: Door - Wood (Room)
+    100340: Door Connector
+    100342: Door Connector 1
+    100344: Door Connector 2
+    100346: Door Frame
+    100348: Door Locker
+    100350: Door Locker 1
+    100352: Door-72-Open
+    100354: Door_Trend
+    100356: Group 351
+    100358: Group 646
+    100360: Group 648
+    100362: Group 651
+    100364: Group 655
+    100366: Group#1
+    100368: Group#1 1
+    100370: Group#1 2
+    100372: Group#1 3
+    100374: Group#1 4
+    100376: Group#1 5
+    100378: Group#1 6
+    100380: Group#1 7
+    100382: Group#1 8
+    100384: Group#2
+    100386: Group#3
+    100388: Group#3 1
+    100390: Group#4
+    100392: Group#4 1
+    100394: Group#4 10
+    100396: Group#4 100
+    100398: Group#4 101
+    100400: Group#4 102
+    100402: Group#4 103
+    100404: Group#4 104
+    100406: Group#4 105
+    100408: Group#4 106
+    100410: Group#4 107
+    100412: Group#4 108
+    100414: Group#4 109
+    100416: Group#4 11
+    100418: Group#4 110
+    100420: Group#4 111
+    100422: Group#4 112
+    100424: Group#4 113
+    100426: Group#4 114
+    100428: Group#4 115
+    100430: Group#4 116
+    100432: Group#4 117
+    100434: Group#4 118
+    100436: Group#4 119
+    100438: Group#4 12
+    100440: Group#4 120
+    100442: Group#4 121
+    100444: Group#4 122
+    100446: Group#4 123
+    100448: Group#4 13
+    100450: Group#4 14
+    100452: Group#4 15
+    100454: Group#4 16
+    100456: Group#4 17
+    100458: Group#4 18
+    100460: Group#4 19
+    100462: Group#4 2
+    100464: Group#4 20
+    100466: Group#4 21
+    100468: Group#4 22
+    100470: Group#4 23
+    100472: Group#4 24
+    100474: Group#4 25
+    100476: Group#4 26
+    100478: Group#4 27
+    100480: Group#4 28
+    100482: Group#4 29
+    100484: Group#4 3
+    100486: Group#4 30
+    100488: Group#4 31
+    100490: Group#4 32
+    100492: Group#4 33
+    100494: Group#4 34
+    100496: Group#4 35
+    100498: Group#4 36
+    100500: Group#4 37
+    100502: Group#4 38
+    100504: Group#4 39
+    100506: Group#4 4
+    100508: Group#4 40
+    100510: Group#4 41
+    100512: Group#4 42
+    100514: Group#4 43
+    100516: Group#4 44
+    100518: Group#4 45
+    100520: Group#4 46
+    100522: Group#4 47
+    100524: Group#4 48
+    100526: Group#4 49
+    100528: Group#4 5
+    100530: Group#4 50
+    100532: Group#4 51
+    100534: Group#4 52
+    100536: Group#4 53
+    100538: Group#4 54
+    100540: Group#4 55
+    100542: Group#4 56
+    100544: Group#4 57
+    100546: Group#4 58
+    100548: Group#4 59
+    100550: Group#4 6
+    100552: Group#4 60
+    100554: Group#4 61
+    100556: Group#4 62
+    100558: Group#4 63
+    100560: Group#4 64
+    100562: Group#4 65
+    100564: Group#4 66
+    100566: Group#4 67
+    100568: Group#4 68
+    100570: Group#4 69
+    100572: Group#4 7
+    100574: Group#4 70
+    100576: Group#4 71
+    100578: Group#4 72
+    100580: Group#4 73
+    100582: Group#4 74
+    100584: Group#4 75
+    100586: Group#4 76
+    100588: Group#4 77
+    100590: Group#4 78
+    100592: Group#4 79
+    100594: Group#4 8
+    100596: Group#4 80
+    100598: Group#4 81
+    100600: Group#4 82
+    100602: Group#4 83
+    100604: Group#4 84
+    100606: Group#4 85
+    100608: Group#4 86
+    100610: Group#4 87
+    100612: Group#4 88
+    100614: Group#4 89
+    100616: Group#4 9
+    100618: Group#4 90
+    100620: Group#4 91
+    100622: Group#4 92
+    100624: Group#4 93
+    100626: Group#4 94
+    100628: Group#4 95
+    100630: Group#4 96
+    100632: Group#4 97
+    100634: Group#4 98
+    100636: Group#4 99
+    100638: Image 2
+    100640: Image 647
+    100642: Image 653
+    100644: Image 657
+    100646: Picture - Building
+    100648: Picture - Building 2
+    100650: Picture - Scene 2
+    100652: Plant_Potted_Fern
+    100654: Plant_Potted_Fern 1
+    100656: Plant_Potted_Fern 2
+    100658: Table_Office_Conference_20ft_Chairs
+    100660: Table_quarter
+    100662: Table_quarter 1
+    100664: Table_quarter 2
+    100666: Table_quarter 3
+    100668: Targa_WallCeiling_Mounted_Electric_Projection_Screen[1]
+    400000: bar
+    400002: bar 1
+    400004: bar 10
+    400006: bar 11
+    400008: bar 12
+    400010: bar 13
+    400012: bar 14
+    400014: bar 15
+    400016: bar 16
+    400018: bar 17
+    400020: bar 18
+    400022: bar 19
+    400024: bar 2
+    400026: bar 20
+    400028: bar 21
+    400030: bar 22
+    400032: bar 23
+    400034: bar 24
+    400036: bar 25
+    400038: bar 26
+    400040: bar 27
+    400042: bar 3
+    400044: bar 4
+    400046: bar 5
+    400048: bar 6
+    400050: bar 7
+    400052: bar 8
+    400054: bar 9
+    400056: chair_half1
+    400058: chair_half1 1
+    400060: chair_half1 10
+    400062: chair_half1 11
+    400064: chair_half1 12
+    400066: chair_half1 13
+    400068: chair_half1 14
+    400070: chair_half1 15
+    400072: chair_half1 16
+    400074: chair_half1 17
+    400076: chair_half1 18
+    400078: chair_half1 19
+    400080: chair_half1 2
+    400082: chair_half1 20
+    400084: chair_half1 21
+    400086: chair_half1 22
+    400088: chair_half1 23
+    400090: chair_half1 24
+    400092: chair_half1 25
+    400094: chair_half1 26
+    400096: chair_half1 27
+    400098: chair_half1 3
+    400100: chair_half1 4
+    400102: chair_half1 5
+    400104: chair_half1 6
+    400106: chair_half1 7
+    400108: chair_half1 8
+    400110: chair_half1 9
+    400112: chair_half2
+    400114: chair_half2 1
+    400116: chair_half2 10
+    400118: chair_half2 11
+    400120: chair_half2 12
+    400122: chair_half2 13
+    400124: chair_half2 14
+    400126: chair_half2 15
+    400128: chair_half2 16
+    400130: chair_half2 17
+    400132: chair_half2 18
+    400134: chair_half2 19
+    400136: chair_half2 2
+    400138: chair_half2 20
+    400140: chair_half2 21
+    400142: chair_half2 22
+    400144: chair_half2 23
+    400146: chair_half2 24
+    400148: chair_half2 25
+    400150: chair_half2 26
+    400152: chair_half2 27
+    400154: chair_half2 3
+    400156: chair_half2 4
+    400158: chair_half2 5
+    400160: chair_half2 6
+    400162: chair_half2 7
+    400164: chair_half2 8
+    400166: chair_half2 9
+    400168: Chair_Office_Fabric_Arms
+    400170: Chair_Office_Fabric_Arms 1
+    400172: Chair_Office_Fabric_Arms 10
+    400174: Chair_Office_Fabric_Arms 11
+    400176: Chair_Office_Fabric_Arms 12
+    400178: Chair_Office_Fabric_Arms 13
+    400180: Chair_Office_Fabric_Arms 2
+    400182: Chair_Office_Fabric_Arms 3
+    400184: Chair_Office_Fabric_Arms 4
+    400186: Chair_Office_Fabric_Arms 5
+    400188: Chair_Office_Fabric_Arms 6
+    400190: Chair_Office_Fabric_Arms 7
+    400192: Chair_Office_Fabric_Arms 8
+    400194: Chair_Office_Fabric_Arms 9
+    400196: chair_wheel
+    400198: chair_wheel 1
+    400200: chair_wheel 10
+    400202: chair_wheel 11
+    400204: chair_wheel 12
+    400206: chair_wheel 13
+    400208: chair_wheel 14
+    400210: chair_wheel 15
+    400212: chair_wheel 16
+    400214: chair_wheel 17
+    400216: chair_wheel 18
+    400218: chair_wheel 19
+    400220: chair_wheel 2
+    400222: chair_wheel 20
+    400224: chair_wheel 21
+    400226: chair_wheel 22
+    400228: chair_wheel 23
+    400230: chair_wheel 24
+    400232: chair_wheel 25
+    400234: chair_wheel 26
+    400236: chair_wheel 27
+    400238: chair_wheel 28
+    400240: chair_wheel 29
+    400242: chair_wheel 3
+    400244: chair_wheel 30
+    400246: chair_wheel 31
+    400248: chair_wheel 32
+    400250: chair_wheel 33
+    400252: chair_wheel 34
+    400254: chair_wheel 35
+    400256: chair_wheel 36
+    400258: chair_wheel 37
+    400260: chair_wheel 38
+    400262: chair_wheel 39
+    400264: chair_wheel 4
+    400266: chair_wheel 40
+    400268: chair_wheel 41
+    400270: chair_wheel 42
+    400272: chair_wheel 43
+    400274: chair_wheel 44
+    400276: chair_wheel 45
+    400278: chair_wheel 46
+    400280: chair_wheel 47
+    400282: chair_wheel 48
+    400284: chair_wheel 49
+    400286: chair_wheel 5
+    400288: chair_wheel 50
+    400290: chair_wheel 51
+    400292: chair_wheel 52
+    400294: chair_wheel 53
+    400296: chair_wheel 54
+    400298: chair_wheel 55
+    400300: chair_wheel 56
+    400302: chair_wheel 57
+    400304: chair_wheel 58
+    400306: chair_wheel 59
+    400308: chair_wheel 6
+    400310: chair_wheel 60
+    400312: chair_wheel 61
+    400314: chair_wheel 62
+    400316: chair_wheel 63
+    400318: chair_wheel 64
+    400320: chair_wheel 65
+    400322: chair_wheel 66
+    400324: chair_wheel 67
+    400326: chair_wheel 68
+    400328: chair_wheel 69
+    400330: chair_wheel 7
+    400332: chair_wheel 8
+    400334: chair_wheel 9
+    400336: //RootNode
+    400338: Door - Wood (Room)
+    400340: Door Connector
+    400342: Door Connector 1
+    400344: Door Connector 2
+    400346: Door Frame
+    400348: Door Locker
+    400350: Door Locker 1
+    400352: Door-72-Open
+    400354: Door_Trend
+    400356: Group 351
+    400358: Group 646
+    400360: Group 648
+    400362: Group 651
+    400364: Group 655
+    400366: Group#1
+    400368: Group#1 1
+    400370: Group#1 2
+    400372: Group#1 3
+    400374: Group#1 4
+    400376: Group#1 5
+    400378: Group#1 6
+    400380: Group#1 7
+    400382: Group#1 8
+    400384: Group#2
+    400386: Group#3
+    400388: Group#3 1
+    400390: Group#4
+    400392: Group#4 1
+    400394: Group#4 10
+    400396: Group#4 100
+    400398: Group#4 101
+    400400: Group#4 102
+    400402: Group#4 103
+    400404: Group#4 104
+    400406: Group#4 105
+    400408: Group#4 106
+    400410: Group#4 107
+    400412: Group#4 108
+    400414: Group#4 109
+    400416: Group#4 11
+    400418: Group#4 110
+    400420: Group#4 111
+    400422: Group#4 112
+    400424: Group#4 113
+    400426: Group#4 114
+    400428: Group#4 115
+    400430: Group#4 116
+    400432: Group#4 117
+    400434: Group#4 118
+    400436: Group#4 119
+    400438: Group#4 12
+    400440: Group#4 120
+    400442: Group#4 121
+    400444: Group#4 122
+    400446: Group#4 123
+    400448: Group#4 13
+    400450: Group#4 14
+    400452: Group#4 15
+    400454: Group#4 16
+    400456: Group#4 17
+    400458: Group#4 18
+    400460: Group#4 19
+    400462: Group#4 2
+    400464: Group#4 20
+    400466: Group#4 21
+    400468: Group#4 22
+    400470: Group#4 23
+    400472: Group#4 24
+    400474: Group#4 25
+    400476: Group#4 26
+    400478: Group#4 27
+    400480: Group#4 28
+    400482: Group#4 29
+    400484: Group#4 3
+    400486: Group#4 30
+    400488: Group#4 31
+    400490: Group#4 32
+    400492: Group#4 33
+    400494: Group#4 34
+    400496: Group#4 35
+    400498: Group#4 36
+    400500: Group#4 37
+    400502: Group#4 38
+    400504: Group#4 39
+    400506: Group#4 4
+    400508: Group#4 40
+    400510: Group#4 41
+    400512: Group#4 42
+    400514: Group#4 43
+    400516: Group#4 44
+    400518: Group#4 45
+    400520: Group#4 46
+    400522: Group#4 47
+    400524: Group#4 48
+    400526: Group#4 49
+    400528: Group#4 5
+    400530: Group#4 50
+    400532: Group#4 51
+    400534: Group#4 52
+    400536: Group#4 53
+    400538: Group#4 54
+    400540: Group#4 55
+    400542: Group#4 56
+    400544: Group#4 57
+    400546: Group#4 58
+    400548: Group#4 59
+    400550: Group#4 6
+    400552: Group#4 60
+    400554: Group#4 61
+    400556: Group#4 62
+    400558: Group#4 63
+    400560: Group#4 64
+    400562: Group#4 65
+    400564: Group#4 66
+    400566: Group#4 67
+    400568: Group#4 68
+    400570: Group#4 69
+    400572: Group#4 7
+    400574: Group#4 70
+    400576: Group#4 71
+    400578: Group#4 72
+    400580: Group#4 73
+    400582: Group#4 74
+    400584: Group#4 75
+    400586: Group#4 76
+    400588: Group#4 77
+    400590: Group#4 78
+    400592: Group#4 79
+    400594: Group#4 8
+    400596: Group#4 80
+    400598: Group#4 81
+    400600: Group#4 82
+    400602: Group#4 83
+    400604: Group#4 84
+    400606: Group#4 85
+    400608: Group#4 86
+    400610: Group#4 87
+    400612: Group#4 88
+    400614: Group#4 89
+    400616: Group#4 9
+    400618: Group#4 90
+    400620: Group#4 91
+    400622: Group#4 92
+    400624: Group#4 93
+    400626: Group#4 94
+    400628: Group#4 95
+    400630: Group#4 96
+    400632: Group#4 97
+    400634: Group#4 98
+    400636: Group#4 99
+    400638: Image 2
+    400640: Image 647
+    400642: Image 653
+    400644: Image 657
+    400646: Picture - Building
+    400648: Picture - Building 2
+    400650: Picture - Scene 2
+    400652: Plant_Potted_Fern
+    400654: Plant_Potted_Fern 1
+    400656: Plant_Potted_Fern 2
+    400658: Table_Office_Conference_20ft_Chairs
+    400660: Table_quarter
+    400662: Table_quarter 1
+    400664: Table_quarter 2
+    400666: Table_quarter 3
+    400668: Targa_WallCeiling_Mounted_Electric_Projection_Screen[1]
+    2300000: bar
+    2300002: bar 1
+    2300004: bar 10
+    2300006: bar 11
+    2300008: bar 12
+    2300010: bar 13
+    2300012: bar 14
+    2300014: bar 15
+    2300016: bar 16
+    2300018: bar 17
+    2300020: bar 18
+    2300022: bar 19
+    2300024: bar 2
+    2300026: bar 20
+    2300028: bar 21
+    2300030: bar 22
+    2300032: bar 23
+    2300034: bar 24
+    2300036: bar 25
+    2300038: bar 26
+    2300040: bar 27
+    2300042: bar 3
+    2300044: bar 4
+    2300046: bar 5
+    2300048: bar 6
+    2300050: bar 7
+    2300052: bar 8
+    2300054: bar 9
+    2300056: chair_half1
+    2300058: chair_half1 1
+    2300060: chair_half1 10
+    2300062: chair_half1 11
+    2300064: chair_half1 12
+    2300066: chair_half1 13
+    2300068: chair_half1 14
+    2300070: chair_half1 15
+    2300072: chair_half1 16
+    2300074: chair_half1 17
+    2300076: chair_half1 18
+    2300078: chair_half1 19
+    2300080: chair_half1 2
+    2300082: chair_half1 20
+    2300084: chair_half1 21
+    2300086: chair_half1 22
+    2300088: chair_half1 23
+    2300090: chair_half1 24
+    2300092: chair_half1 25
+    2300094: chair_half1 26
+    2300096: chair_half1 27
+    2300098: chair_half1 3
+    2300100: chair_half1 4
+    2300102: chair_half1 5
+    2300104: chair_half1 6
+    2300106: chair_half1 7
+    2300108: chair_half1 8
+    2300110: chair_half1 9
+    2300112: chair_half2
+    2300114: chair_half2 1
+    2300116: chair_half2 10
+    2300118: chair_half2 11
+    2300120: chair_half2 12
+    2300122: chair_half2 13
+    2300124: chair_half2 14
+    2300126: chair_half2 15
+    2300128: chair_half2 16
+    2300130: chair_half2 17
+    2300132: chair_half2 18
+    2300134: chair_half2 19
+    2300136: chair_half2 2
+    2300138: chair_half2 20
+    2300140: chair_half2 21
+    2300142: chair_half2 22
+    2300144: chair_half2 23
+    2300146: chair_half2 24
+    2300148: chair_half2 25
+    2300150: chair_half2 26
+    2300152: chair_half2 27
+    2300154: chair_half2 3
+    2300156: chair_half2 4
+    2300158: chair_half2 5
+    2300160: chair_half2 6
+    2300162: chair_half2 7
+    2300164: chair_half2 8
+    2300166: chair_half2 9
+    2300168: Chair_Office_Fabric_Arms
+    2300170: Chair_Office_Fabric_Arms 1
+    2300172: Chair_Office_Fabric_Arms 10
+    2300174: Chair_Office_Fabric_Arms 11
+    2300176: Chair_Office_Fabric_Arms 12
+    2300178: Chair_Office_Fabric_Arms 13
+    2300180: Chair_Office_Fabric_Arms 2
+    2300182: Chair_Office_Fabric_Arms 3
+    2300184: Chair_Office_Fabric_Arms 4
+    2300186: Chair_Office_Fabric_Arms 5
+    2300188: Chair_Office_Fabric_Arms 6
+    2300190: Chair_Office_Fabric_Arms 7
+    2300192: Chair_Office_Fabric_Arms 8
+    2300194: Chair_Office_Fabric_Arms 9
+    2300196: chair_wheel
+    2300198: chair_wheel 1
+    2300200: chair_wheel 10
+    2300202: chair_wheel 11
+    2300204: chair_wheel 12
+    2300206: chair_wheel 13
+    2300208: chair_wheel 14
+    2300210: chair_wheel 15
+    2300212: chair_wheel 16
+    2300214: chair_wheel 17
+    2300216: chair_wheel 18
+    2300218: chair_wheel 19
+    2300220: chair_wheel 2
+    2300222: chair_wheel 20
+    2300224: chair_wheel 21
+    2300226: chair_wheel 22
+    2300228: chair_wheel 23
+    2300230: chair_wheel 24
+    2300232: chair_wheel 25
+    2300234: chair_wheel 26
+    2300236: chair_wheel 27
+    2300238: chair_wheel 28
+    2300240: chair_wheel 29
+    2300242: chair_wheel 3
+    2300244: chair_wheel 30
+    2300246: chair_wheel 31
+    2300248: chair_wheel 32
+    2300250: chair_wheel 33
+    2300252: chair_wheel 34
+    2300254: chair_wheel 35
+    2300256: chair_wheel 36
+    2300258: chair_wheel 37
+    2300260: chair_wheel 38
+    2300262: chair_wheel 39
+    2300264: chair_wheel 4
+    2300266: chair_wheel 40
+    2300268: chair_wheel 41
+    2300270: chair_wheel 42
+    2300272: chair_wheel 43
+    2300274: chair_wheel 44
+    2300276: chair_wheel 45
+    2300278: chair_wheel 46
+    2300280: chair_wheel 47
+    2300282: chair_wheel 48
+    2300284: chair_wheel 49
+    2300286: chair_wheel 5
+    2300288: chair_wheel 50
+    2300290: chair_wheel 51
+    2300292: chair_wheel 52
+    2300294: chair_wheel 53
+    2300296: chair_wheel 54
+    2300298: chair_wheel 55
+    2300300: chair_wheel 56
+    2300302: chair_wheel 57
+    2300304: chair_wheel 58
+    2300306: chair_wheel 59
+    2300308: chair_wheel 6
+    2300310: chair_wheel 60
+    2300312: chair_wheel 61
+    2300314: chair_wheel 62
+    2300316: chair_wheel 63
+    2300318: chair_wheel 64
+    2300320: chair_wheel 65
+    2300322: chair_wheel 66
+    2300324: chair_wheel 67
+    2300326: chair_wheel 68
+    2300328: chair_wheel 69
+    2300330: chair_wheel 7
+    2300332: chair_wheel 8
+    2300334: chair_wheel 9
+    2300336: //RootNode
+    2300338: Door Connector
+    2300340: Door Connector 1
+    2300342: Door Connector 2
+    2300344: Door Frame
+    2300346: Door Locker
+    2300348: Door Locker 1
+    2300350: Group 351
+    2300352: Group 648
+    2300354: Group 651
+    2300356: Group 655
+    2300358: Group#1
+    2300360: Group#1 1
+    2300362: Group#1 2
+    2300364: Group#1 3
+    2300366: Group#1 4
+    2300368: Group#1 5
+    2300370: Group#1 6
+    2300372: Group#1 7
+    2300374: Group#1 8
+    2300376: Group#2
+    2300378: Group#3
+    2300380: Group#3 1
+    2300382: Group#4
+    2300384: Group#4 1
+    2300386: Group#4 10
+    2300388: Group#4 100
+    2300390: Group#4 101
+    2300392: Group#4 102
+    2300394: Group#4 103
+    2300396: Group#4 104
+    2300398: Group#4 105
+    2300400: Group#4 106
+    2300402: Group#4 107
+    2300404: Group#4 108
+    2300406: Group#4 109
+    2300408: Group#4 11
+    2300410: Group#4 110
+    2300412: Group#4 111
+    2300414: Group#4 112
+    2300416: Group#4 113
+    2300418: Group#4 114
+    2300420: Group#4 115
+    2300422: Group#4 116
+    2300424: Group#4 117
+    2300426: Group#4 118
+    2300428: Group#4 119
+    2300430: Group#4 12
+    2300432: Group#4 120
+    2300434: Group#4 121
+    2300436: Group#4 122
+    2300438: Group#4 123
+    2300440: Group#4 13
+    2300442: Group#4 14
+    2300444: Group#4 15
+    2300446: Group#4 16
+    2300448: Group#4 17
+    2300450: Group#4 18
+    2300452: Group#4 19
+    2300454: Group#4 2
+    2300456: Group#4 20
+    2300458: Group#4 21
+    2300460: Group#4 22
+    2300462: Group#4 23
+    2300464: Group#4 24
+    2300466: Group#4 25
+    2300468: Group#4 26
+    2300470: Group#4 27
+    2300472: Group#4 28
+    2300474: Group#4 29
+    2300476: Group#4 3
+    2300478: Group#4 30
+    2300480: Group#4 31
+    2300482: Group#4 32
+    2300484: Group#4 33
+    2300486: Group#4 34
+    2300488: Group#4 35
+    2300490: Group#4 36
+    2300492: Group#4 37
+    2300494: Group#4 38
+    2300496: Group#4 39
+    2300498: Group#4 4
+    2300500: Group#4 40
+    2300502: Group#4 41
+    2300504: Group#4 42
+    2300506: Group#4 43
+    2300508: Group#4 44
+    2300510: Group#4 45
+    2300512: Group#4 46
+    2300514: Group#4 47
+    2300516: Group#4 48
+    2300518: Group#4 49
+    2300520: Group#4 5
+    2300522: Group#4 50
+    2300524: Group#4 51
+    2300526: Group#4 52
+    2300528: Group#4 53
+    2300530: Group#4 54
+    2300532: Group#4 55
+    2300534: Group#4 56
+    2300536: Group#4 57
+    2300538: Group#4 58
+    2300540: Group#4 59
+    2300542: Group#4 6
+    2300544: Group#4 60
+    2300546: Group#4 61
+    2300548: Group#4 62
+    2300550: Group#4 63
+    2300552: Group#4 64
+    2300554: Group#4 65
+    2300556: Group#4 66
+    2300558: Group#4 67
+    2300560: Group#4 68
+    2300562: Group#4 69
+    2300564: Group#4 7
+    2300566: Group#4 70
+    2300568: Group#4 71
+    2300570: Group#4 72
+    2300572: Group#4 73
+    2300574: Group#4 74
+    2300576: Group#4 75
+    2300578: Group#4 76
+    2300580: Group#4 77
+    2300582: Group#4 78
+    2300584: Group#4 79
+    2300586: Group#4 8
+    2300588: Group#4 80
+    2300590: Group#4 81
+    2300592: Group#4 82
+    2300594: Group#4 83
+    2300596: Group#4 84
+    2300598: Group#4 85
+    2300600: Group#4 86
+    2300602: Group#4 87
+    2300604: Group#4 88
+    2300606: Group#4 89
+    2300608: Group#4 9
+    2300610: Group#4 90
+    2300612: Group#4 91
+    2300614: Group#4 92
+    2300616: Group#4 93
+    2300618: Group#4 94
+    2300620: Group#4 95
+    2300622: Group#4 96
+    2300624: Group#4 97
+    2300626: Group#4 98
+    2300628: Group#4 99
+    2300630: Image 2
+    2300632: Image 647
+    2300634: Image 653
+    2300636: Image 657
+    2300638: Plant_Potted_Fern
+    2300640: Plant_Potted_Fern 1
+    2300642: Plant_Potted_Fern 2
+    2300644: Table_quarter
+    2300646: Table_quarter 1
+    2300648: Table_quarter 2
+    2300650: Table_quarter 3
+    2300652: Targa_WallCeiling_Mounted_Electric_Projection_Screen[1]
+    3300000: bar
+    3300002: bar 1
+    3300004: bar 10
+    3300006: bar 11
+    3300008: bar 12
+    3300010: bar 13
+    3300012: bar 14
+    3300014: bar 15
+    3300016: bar 16
+    3300018: bar 17
+    3300020: bar 18
+    3300022: bar 19
+    3300024: bar 2
+    3300026: bar 20
+    3300028: bar 21
+    3300030: bar 22
+    3300032: bar 23
+    3300034: bar 24
+    3300036: bar 25
+    3300038: bar 26
+    3300040: bar 27
+    3300042: bar 3
+    3300044: bar 4
+    3300046: bar 5
+    3300048: bar 6
+    3300050: bar 7
+    3300052: bar 8
+    3300054: bar 9
+    3300056: chair_half1
+    3300058: chair_half1 1
+    3300060: chair_half1 10
+    3300062: chair_half1 11
+    3300064: chair_half1 12
+    3300066: chair_half1 13
+    3300068: chair_half1 14
+    3300070: chair_half1 15
+    3300072: chair_half1 16
+    3300074: chair_half1 17
+    3300076: chair_half1 18
+    3300078: chair_half1 19
+    3300080: chair_half1 2
+    3300082: chair_half1 20
+    3300084: chair_half1 21
+    3300086: chair_half1 22
+    3300088: chair_half1 23
+    3300090: chair_half1 24
+    3300092: chair_half1 25
+    3300094: chair_half1 26
+    3300096: chair_half1 27
+    3300098: chair_half1 3
+    3300100: chair_half1 4
+    3300102: chair_half1 5
+    3300104: chair_half1 6
+    3300106: chair_half1 7
+    3300108: chair_half1 8
+    3300110: chair_half1 9
+    3300112: chair_half2
+    3300114: chair_half2 1
+    3300116: chair_half2 10
+    3300118: chair_half2 11
+    3300120: chair_half2 12
+    3300122: chair_half2 13
+    3300124: chair_half2 14
+    3300126: chair_half2 15
+    3300128: chair_half2 16
+    3300130: chair_half2 17
+    3300132: chair_half2 18
+    3300134: chair_half2 19
+    3300136: chair_half2 2
+    3300138: chair_half2 20
+    3300140: chair_half2 21
+    3300142: chair_half2 22
+    3300144: chair_half2 23
+    3300146: chair_half2 24
+    3300148: chair_half2 25
+    3300150: chair_half2 26
+    3300152: chair_half2 27
+    3300154: chair_half2 3
+    3300156: chair_half2 4
+    3300158: chair_half2 5
+    3300160: chair_half2 6
+    3300162: chair_half2 7
+    3300164: chair_half2 8
+    3300166: chair_half2 9
+    3300168: Chair_Office_Fabric_Arms
+    3300170: Chair_Office_Fabric_Arms 1
+    3300172: Chair_Office_Fabric_Arms 10
+    3300174: Chair_Office_Fabric_Arms 11
+    3300176: Chair_Office_Fabric_Arms 12
+    3300178: Chair_Office_Fabric_Arms 13
+    3300180: Chair_Office_Fabric_Arms 2
+    3300182: Chair_Office_Fabric_Arms 3
+    3300184: Chair_Office_Fabric_Arms 4
+    3300186: Chair_Office_Fabric_Arms 5
+    3300188: Chair_Office_Fabric_Arms 6
+    3300190: Chair_Office_Fabric_Arms 7
+    3300192: Chair_Office_Fabric_Arms 8
+    3300194: Chair_Office_Fabric_Arms 9
+    3300196: chair_wheel
+    3300198: chair_wheel 1
+    3300200: chair_wheel 10
+    3300202: chair_wheel 11
+    3300204: chair_wheel 12
+    3300206: chair_wheel 13
+    3300208: chair_wheel 14
+    3300210: chair_wheel 15
+    3300212: chair_wheel 16
+    3300214: chair_wheel 17
+    3300216: chair_wheel 18
+    3300218: chair_wheel 19
+    3300220: chair_wheel 2
+    3300222: chair_wheel 20
+    3300224: chair_wheel 21
+    3300226: chair_wheel 22
+    3300228: chair_wheel 23
+    3300230: chair_wheel 24
+    3300232: chair_wheel 25
+    3300234: chair_wheel 26
+    3300236: chair_wheel 27
+    3300238: chair_wheel 28
+    3300240: chair_wheel 29
+    3300242: chair_wheel 3
+    3300244: chair_wheel 30
+    3300246: chair_wheel 31
+    3300248: chair_wheel 32
+    3300250: chair_wheel 33
+    3300252: chair_wheel 34
+    3300254: chair_wheel 35
+    3300256: chair_wheel 36
+    3300258: chair_wheel 37
+    3300260: chair_wheel 38
+    3300262: chair_wheel 39
+    3300264: chair_wheel 4
+    3300266: chair_wheel 40
+    3300268: chair_wheel 41
+    3300270: chair_wheel 42
+    3300272: chair_wheel 43
+    3300274: chair_wheel 44
+    3300276: chair_wheel 45
+    3300278: chair_wheel 46
+    3300280: chair_wheel 47
+    3300282: chair_wheel 48
+    3300284: chair_wheel 49
+    3300286: chair_wheel 5
+    3300288: chair_wheel 50
+    3300290: chair_wheel 51
+    3300292: chair_wheel 52
+    3300294: chair_wheel 53
+    3300296: chair_wheel 54
+    3300298: chair_wheel 55
+    3300300: chair_wheel 56
+    3300302: chair_wheel 57
+    3300304: chair_wheel 58
+    3300306: chair_wheel 59
+    3300308: chair_wheel 6
+    3300310: chair_wheel 60
+    3300312: chair_wheel 61
+    3300314: chair_wheel 62
+    3300316: chair_wheel 63
+    3300318: chair_wheel 64
+    3300320: chair_wheel 65
+    3300322: chair_wheel 66
+    3300324: chair_wheel 67
+    3300326: chair_wheel 68
+    3300328: chair_wheel 69
+    3300330: chair_wheel 7
+    3300332: chair_wheel 8
+    3300334: chair_wheel 9
+    3300336: //RootNode
+    3300338: Door Connector
+    3300340: Door Connector 1
+    3300342: Door Connector 2
+    3300344: Door Frame
+    3300346: Door Locker
+    3300348: Door Locker 1
+    3300350: Group 351
+    3300352: Group 648
+    3300354: Group 651
+    3300356: Group 655
+    3300358: Group#1
+    3300360: Group#1 1
+    3300362: Group#1 2
+    3300364: Group#1 3
+    3300366: Group#1 4
+    3300368: Group#1 5
+    3300370: Group#1 6
+    3300372: Group#1 7
+    3300374: Group#1 8
+    3300376: Group#2
+    3300378: Group#3
+    3300380: Group#3 1
+    3300382: Group#4
+    3300384: Group#4 1
+    3300386: Group#4 10
+    3300388: Group#4 100
+    3300390: Group#4 101
+    3300392: Group#4 102
+    3300394: Group#4 103
+    3300396: Group#4 104
+    3300398: Group#4 105
+    3300400: Group#4 106
+    3300402: Group#4 107
+    3300404: Group#4 108
+    3300406: Group#4 109
+    3300408: Group#4 11
+    3300410: Group#4 110
+    3300412: Group#4 111
+    3300414: Group#4 112
+    3300416: Group#4 113
+    3300418: Group#4 114
+    3300420: Group#4 115
+    3300422: Group#4 116
+    3300424: Group#4 117
+    3300426: Group#4 118
+    3300428: Group#4 119
+    3300430: Group#4 12
+    3300432: Group#4 120
+    3300434: Group#4 121
+    3300436: Group#4 122
+    3300438: Group#4 123
+    3300440: Group#4 13
+    3300442: Group#4 14
+    3300444: Group#4 15
+    3300446: Group#4 16
+    3300448: Group#4 17
+    3300450: Group#4 18
+    3300452: Group#4 19
+    3300454: Group#4 2
+    3300456: Group#4 20
+    3300458: Group#4 21
+    3300460: Group#4 22
+    3300462: Group#4 23
+    3300464: Group#4 24
+    3300466: Group#4 25
+    3300468: Group#4 26
+    3300470: Group#4 27
+    3300472: Group#4 28
+    3300474: Group#4 29
+    3300476: Group#4 3
+    3300478: Group#4 30
+    3300480: Group#4 31
+    3300482: Group#4 32
+    3300484: Group#4 33
+    3300486: Group#4 34
+    3300488: Group#4 35
+    3300490: Group#4 36
+    3300492: Group#4 37
+    3300494: Group#4 38
+    3300496: Group#4 39
+    3300498: Group#4 4
+    3300500: Group#4 40
+    3300502: Group#4 41
+    3300504: Group#4 42
+    3300506: Group#4 43
+    3300508: Group#4 44
+    3300510: Group#4 45
+    3300512: Group#4 46
+    3300514: Group#4 47
+    3300516: Group#4 48
+    3300518: Group#4 49
+    3300520: Group#4 5
+    3300522: Group#4 50
+    3300524: Group#4 51
+    3300526: Group#4 52
+    3300528: Group#4 53
+    3300530: Group#4 54
+    3300532: Group#4 55
+    3300534: Group#4 56
+    3300536: Group#4 57
+    3300538: Group#4 58
+    3300540: Group#4 59
+    3300542: Group#4 6
+    3300544: Group#4 60
+    3300546: Group#4 61
+    3300548: Group#4 62
+    3300550: Group#4 63
+    3300552: Group#4 64
+    3300554: Group#4 65
+    3300556: Group#4 66
+    3300558: Group#4 67
+    3300560: Group#4 68
+    3300562: Group#4 69
+    3300564: Group#4 7
+    3300566: Group#4 70
+    3300568: Group#4 71
+    3300570: Group#4 72
+    3300572: Group#4 73
+    3300574: Group#4 74
+    3300576: Group#4 75
+    3300578: Group#4 76
+    3300580: Group#4 77
+    3300582: Group#4 78
+    3300584: Group#4 79
+    3300586: Group#4 8
+    3300588: Group#4 80
+    3300590: Group#4 81
+    3300592: Group#4 82
+    3300594: Group#4 83
+    3300596: Group#4 84
+    3300598: Group#4 85
+    3300600: Group#4 86
+    3300602: Group#4 87
+    3300604: Group#4 88
+    3300606: Group#4 89
+    3300608: Group#4 9
+    3300610: Group#4 90
+    3300612: Group#4 91
+    3300614: Group#4 92
+    3300616: Group#4 93
+    3300618: Group#4 94
+    3300620: Group#4 95
+    3300622: Group#4 96
+    3300624: Group#4 97
+    3300626: Group#4 98
+    3300628: Group#4 99
+    3300630: Image 2
+    3300632: Image 647
+    3300634: Image 653
+    3300636: Image 657
+    3300638: Plant_Potted_Fern
+    3300640: Plant_Potted_Fern 1
+    3300642: Plant_Potted_Fern 2
+    3300644: Table_quarter
+    3300646: Table_quarter 1
+    3300648: Table_quarter 2
+    3300650: Table_quarter 3
+    3300652: Targa_WallCeiling_Mounted_Electric_Projection_Screen[1]
+    4300000: Mesh Conference+Room
+    4300002: Mesh Conference+Room
+    4300004: Mesh Table_quarter
+    4300006: Mesh Chair_Office_Fabric_Arms
+    4300008: Mesh bar
+    4300010: Mesh chair_wheel
+    4300012: Mesh chair_half1
+    4300014: Mesh chair_half2
+    4300016: Mesh Group 351
+    4300018: Mesh Door Connector
+    4300020: Mesh Door Locker
+    4300022: Mesh Door Frame
+    4300024: Mesh Group#1
+    4300026: Mesh Group#2
+    4300028: Mesh Group#3
+    4300030: Mesh Targa_WallCeiling_Mounted_Electric_Projection_Screen[1]
+    4300032: Mesh Group#4
+    4300034: Mesh Plant_Potted_Fern
+    4300036: Mesh Group 646
+    4300038: Mesh Group 648
+    4300040: Mesh Group 651
+    4300042: Mesh Group 651
+    4300044: Mesh Group 655
+    4300046: Mesh Group 655
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
