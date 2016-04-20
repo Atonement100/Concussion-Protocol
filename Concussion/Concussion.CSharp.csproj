@@ -101,6 +101,7 @@
     <Compile Include="Assets\MobileMovieTexture\MobileMovieTexture.cs" />
     <Compile Include="Assets\MobileMovieTexture\StreamingAssetsLinkAttribute.cs" />
     <Compile Include="Assets\MobileMovieTexture\TestMobileTexture.cs" />
+    <Compile Include="Assets\choiceTrigger.cs" />
     <Compile Include="Assets\playerController.cs" />
     <Compile Include="Assets\startMovieOnPlay.cs" />
   </ItemGroup>
