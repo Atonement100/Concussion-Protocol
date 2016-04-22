@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 41e8cf546022e7843a40f02f2f806dbe
+timeCreated: 1461124123
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000
+  assetHash:
+    serializedVersion: 2
+    Hash: f758c18585ece712bea9aa2439f30e5e
+  longitude: -82.34861767008793
+  latitude: 29.64992797770362
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 146.88048, y: 125.913055, z: 300.38416}
+      lookAt: {x: 118.81176, y: 101.053955, z: 251.37334}
+      up: {x: -0.2002057, y: 0.915266, z: -0.3495795}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BHG_Ramp_Post
+    100004: BHG_Ramp_Post 1
+    100006: BHG_Ramp_Post 10
+    100008: BHG_Ramp_Post 11
+    100010: BHG_Ramp_Post 12
+    100012: BHG_Ramp_Post 13
+    100014: BHG_Ramp_Post 14
+    100016: BHG_Ramp_Post 15
+    100018: BHG_Ramp_Post 16
+    100020: BHG_Ramp_Post 17
+    100022: BHG_Ramp_Post 18
+    100024: BHG_Ramp_Post 19
+    100026: BHG_Ramp_Post 2
+    100028: BHG_Ramp_Post 20
+    100030: BHG_Ramp_Post 21
+    100032: BHG_Ramp_Post 3
+    100034: BHG_Ramp_Post 4
+    100036: BHG_Ramp_Post 5
+    100038: BHG_Ramp_Post 6
+    100040: BHG_Ramp_Post 7
+    100042: BHG_Ramp_Post 8
+    100044: BHG_Ramp_Post 9
+    100046: Google Earth Terrain
+    100048: Group 100
+    100050: Group 31
+    100052: Group 33
+    100054: Group 35
+    100056: Group 37
+    100058: Group 39
+    100060: Group 41
+    100062: Group 43
+    100064: Group 45
+    100066: Group 47
+    100068: Group 49
+    100070: Group 5
+    100072: Group 51
+    100074: Group 53
+    100076: Group 55
+    100078: Group 57
+    100080: Group 59
+    100082: Group 6
+    100084: Group 60
+    100086: Group 7
+    100088: Group 84
+    100090: Group 86
+    100092: Group 88
+    100094: Group 90
+    100096: Group 92
+    100098: Group 94
+    100100: Group 96
+    100102: Group 98
+    400000: //RootNode
+    400002: BHG_Ramp_Post
+    400004: BHG_Ramp_Post 1
+    400006: BHG_Ramp_Post 10
+    400008: BHG_Ramp_Post 11
+    400010: BHG_Ramp_Post 12
+    400012: BHG_Ramp_Post 13
+    400014: BHG_Ramp_Post 14
+    400016: BHG_Ramp_Post 15
+    400018: BHG_Ramp_Post 16
+    400020: BHG_Ramp_Post 17
+    400022: BHG_Ramp_Post 18
+    400024: BHG_Ramp_Post 19
+    400026: BHG_Ramp_Post 2
+    400028: BHG_Ramp_Post 20
+    400030: BHG_Ramp_Post 21
+    400032: BHG_Ramp_Post 3
+    400034: BHG_Ramp_Post 4
+    400036: BHG_Ramp_Post 5
+    400038: BHG_Ramp_Post 6
+    400040: BHG_Ramp_Post 7
+    400042: BHG_Ramp_Post 8
+    400044: BHG_Ramp_Post 9
+    400046: Google Earth Terrain
+    400048: Group 100
+    400050: Group 31
+    400052: Group 33
+    400054: Group 35
+    400056: Group 37
+    400058: Group 39
+    400060: Group 41
+    400062: Group 43
+    400064: Group 45
+    400066: Group 47
+    400068: Group 49
+    400070: Group 5
+    400072: Group 51
+    400074: Group 53
+    400076: Group 55
+    400078: Group 57
+    400080: Group 59
+    400082: Group 6
+    400084: Group 60
+    400086: Group 7
+    400088: Group 84
+    400090: Group 86
+    400092: Group 88
+    400094: Group 90
+    400096: Group 92
+    400098: Group 94
+    400100: Group 96
+    400102: Group 98
+    2300000: BHG_Ramp_Post
+    2300002: BHG_Ramp_Post 1
+    2300004: BHG_Ramp_Post 10
+    2300006: BHG_Ramp_Post 11
+    2300008: BHG_Ramp_Post 12
+    2300010: BHG_Ramp_Post 13
+    2300012: BHG_Ramp_Post 14
+    2300014: BHG_Ramp_Post 15
+    2300016: BHG_Ramp_Post 16
+    2300018: BHG_Ramp_Post 17
+    2300020: BHG_Ramp_Post 18
+    2300022: BHG_Ramp_Post 19
+    2300024: BHG_Ramp_Post 2
+    2300026: BHG_Ramp_Post 20
+    2300028: BHG_Ramp_Post 21
+    2300030: BHG_Ramp_Post 3
+    2300032: BHG_Ramp_Post 4
+    2300034: BHG_Ramp_Post 5
+    2300036: BHG_Ramp_Post 6
+    2300038: BHG_Ramp_Post 7
+    2300040: BHG_Ramp_Post 8
+    2300042: BHG_Ramp_Post 9
+    2300044: Google Earth Terrain
+    2300046: Group 100
+    2300048: Group 31
+    2300050: Group 33
+    2300052: Group 35
+    2300054: Group 37
+    2300056: Group 39
+    2300058: Group 41
+    2300060: Group 43
+    2300062: Group 45
+    2300064: Group 47
+    2300066: Group 49
+    2300068: Group 51
+    2300070: Group 53
+    2300072: Group 55
+    2300074: Group 57
+    2300076: Group 60
+    2300078: Group 7
+    2300080: Group 84
+    2300082: Group 86
+    2300084: Group 88
+    2300086: Group 90
+    2300088: Group 92
+    2300090: Group 94
+    2300092: Group 96
+    2300094: Group 98
+    3300000: BHG_Ramp_Post
+    3300002: BHG_Ramp_Post 1
+    3300004: BHG_Ramp_Post 10
+    3300006: BHG_Ramp_Post 11
+    3300008: BHG_Ramp_Post 12
+    3300010: BHG_Ramp_Post 13
+    3300012: BHG_Ramp_Post 14
+    3300014: BHG_Ramp_Post 15
+    3300016: BHG_Ramp_Post 16
+    3300018: BHG_Ramp_Post 17
+    3300020: BHG_Ramp_Post 18
+    3300022: BHG_Ramp_Post 19
+    3300024: BHG_Ramp_Post 2
+    3300026: BHG_Ramp_Post 20
+    3300028: BHG_Ramp_Post 21
+    3300030: BHG_Ramp_Post 3
+    3300032: BHG_Ramp_Post 4
+    3300034: BHG_Ramp_Post 5
+    3300036: BHG_Ramp_Post 6
+    3300038: BHG_Ramp_Post 7
+    3300040: BHG_Ramp_Post 8
+    3300042: BHG_Ramp_Post 9
+    3300044: Google Earth Terrain
+    3300046: Group 100
+    3300048: Group 31
+    3300050: Group 33
+    3300052: Group 35
+    3300054: Group 37
+    3300056: Group 39
+    3300058: Group 41
+    3300060: Group 43
+    3300062: Group 45
+    3300064: Group 47
+    3300066: Group 49
+    3300068: Group 51
+    3300070: Group 53
+    3300072: Group 55
+    3300074: Group 57
+    3300076: Group 60
+    3300078: Group 7
+    3300080: Group 84
+    3300082: Group 86
+    3300084: Group 88
+    3300086: Group 90
+    3300088: Group 92
+    3300090: Group 94
+    3300092: Group 96
+    3300094: Group 98
+    4300000: Mesh Google Earth Terrain
+    4300002: Mesh Group 7
+    4300004: Mesh BHG_Ramp_Post
+    4300006: Mesh Group 31
+    4300008: Mesh Group 33
+    4300010: Mesh Group 45
+    4300012: Mesh Group 47
+    4300014: Mesh Group 49
+    4300016: Mesh Group 51
+    4300018: Mesh Group 53
+    4300020: Mesh Group 55
+    4300022: Mesh Group 57
+    4300024: Mesh Group 60
+    4300026: Mesh Group 86
+    4300028: Mesh Group 88
+    4300030: Mesh Group 90
+    4300032: Mesh Group 92
+    4300034: Mesh Group 94
+    4300036: Mesh Group 96
+    4300038: Mesh Group 98
+    4300040: Mesh Group 100
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
