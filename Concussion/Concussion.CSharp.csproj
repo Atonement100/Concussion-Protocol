@@ -96,13 +96,9 @@
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
     <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
-    <Compile Include="Assets\MobileMovieTexture\AssetStream.cs" />
-    <Compile Include="Assets\MobileMovieTexture\MobileMovieManager.cs" />
-    <Compile Include="Assets\MobileMovieTexture\MobileMovieTexture.cs" />
-    <Compile Include="Assets\MobileMovieTexture\StreamingAssetsLinkAttribute.cs" />
-    <Compile Include="Assets\MobileMovieTexture\TestMobileTexture.cs" />
     <Compile Include="Assets\choiceTrigger.cs" />
     <Compile Include="Assets\playerController.cs" />
+    <Compile Include="Assets\sceneTransition.cs" />
     <Compile Include="Assets\startMovieOnPlay.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -111,13 +107,6 @@
     <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
     <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
     <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
-    <None Include="Assets\MobileMovieTexture\Instructions.txt" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCbCrtoRGB.cginc" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGB.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBChromaKey.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBSplitAlpha.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBTrans.shader" />
-    <None Include="Assets\MobileMovieTexture\legal.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

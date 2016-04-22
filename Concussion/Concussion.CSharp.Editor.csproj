@@ -115,9 +115,6 @@
     <Compile Include="Assets\Cardboard\Editor\CardboardMenu.cs" />
     <Compile Include="Assets\Cardboard\Editor\CardboardSetup.cs" />
     <Compile Include="Assets\Cardboard\Editor\StereoControllerEditor.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\StreamingAssetsLinkDrawer.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\YCbCrDrawer.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\YCbCrPriority.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
@@ -125,13 +122,6 @@
     <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
     <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
     <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
-    <None Include="Assets\MobileMovieTexture\Instructions.txt" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCbCrtoRGB.cginc" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGB.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBChromaKey.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBSplitAlpha.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBTrans.shader" />
-    <None Include="Assets\MobileMovieTexture\legal.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

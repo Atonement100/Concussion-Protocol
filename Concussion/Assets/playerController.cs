@@ -2,21 +2,49 @@
 using System.Collections;
 
 public class playerController : MonoBehaviour {
+    private bool startTimeSet = false, lerpTo = true;
+    private float startTime, timeDiff;
+    private Quaternion keep, temp;
+    private int lerpRate = 5;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    if (Cardboard.SDK.Triggered)
+    void Start()
+    {
+        keep = GetComponent<Transform>().parent.transform.rotation;
+        temp = keep;
+    }
+
+    void headShakeSetup()
+    {
+        temp = GetComponent<Transform>().parent.transform.rotation;
+        keep = temp;
+
+        temp.eulerAngles = new Vector3(
+           Random.Range((float)(temp.eulerAngles.x - 50), (float)(temp.eulerAngles.x + 50)),
+           //temp.eulerAngles.x,
+           Random.Range((float)(temp.eulerAngles.y - 50), (float)(temp.eulerAngles.y + 50)),
+           //temp.eulerAngles.y,
+           temp.eulerAngles.z);
+           //Mathf.Clamp(Random.Range((float)(temp.eulerAngles.z - 50), (float)(temp.eulerAngles.z + 50)),-50,50));
+
+        if (!startTimeSet)
         {
+            startTime = Time.time;
+            startTimeSet = true;
+        }
+    }
+
+	void Update () {
+
+        #region CardboardTrigger
+        if (Cardboard.SDK.Triggered)
+        {
+
             //whatever trigger logic we want here
 
             //movement
             //GetComponent<Transform>().parent.transform.position += new Vector3 (GetComponent<Transform>().transform.forward.x * Time.deltaTime * 10, 0.0f, GetComponent<Transform>().forward.z*Time.deltaTime*10);
 
+            #region Raycasting
             //raycast for selection of options
             RaycastHit hit;
             if (Physics.Raycast(GetComponent<Transform>().parent.transform.position, GetComponent<Transform>().transform.forward, out hit))
@@ -73,6 +101,45 @@ public class playerController : MonoBehaviour {
                 }
             }
             else { print("miss"); }
+            #endregion 
         }
-	}
+        #endregion
+
+        if (Input.GetKeyDown("a"))
+        {
+            headShakeSetup();
+        }
+        if (Input.GetKeyDown("z"))
+        {
+            sceneTransition tempST = FindObjectOfType<sceneTransition>();
+            tempST.transferNow = true;
+        }
+
+
+        #region headShakeHandler
+        timeDiff = (Time.time - startTime)*lerpRate;
+
+        if (timeDiff < 1.1 && startTimeSet)
+        {
+            if (lerpTo)
+            {
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(keep, temp, timeDiff*3);
+            }
+            else
+            {
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(temp, keep, timeDiff*3);
+            }
+        }
+        else if (lerpTo && startTimeSet)
+        {
+            lerpTo = false;
+            startTime = Time.time;
+        }
+        else
+        {
+            lerpTo = true;
+            startTimeSet = false;
+        }
+        #endregion
+    }
 }
