@@ -3,6 +3,7 @@ using System.Collections;
 
 public class playerController : MonoBehaviour
 {
+    public GameObject cameraRight;
     public float disorientLength = 10.0f;
     [Range(5.0f, 89.0f)]
     public float minDisorientAngle = 10.0f, maxDisorientAngle = 30.0f;
@@ -13,12 +14,14 @@ public class playerController : MonoBehaviour
     private Quaternion keep, temp, disKeep, disTemp;
     private Quaternion[] tempRotations;
     private int lerpRate = 5, tRotIt = 0;
-
+    private UnityStandardAssets.ImageEffects.Blur blur;
 
     void Start()
     {
         keep = GetComponent<Transform>().parent.transform.rotation;
         temp = keep;
+
+        blur = cameraRight.GetComponent<UnityStandardAssets.ImageEffects.Blur>();
     }
 
     void headShakeSetup()
@@ -73,25 +76,29 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
+        #region removable binds (used for testing)
+        if (Input.GetKeyDown("a"))
+        {
+            headShakeSetup();
+        }
+        if (Input.GetKeyDown("q"))
+        {
+            disorientSetup();
+        }
+        if (Input.GetKeyDown("z"))
+        {
+            sceneTransition tempST = FindObjectOfType<sceneTransition>();
+            tempST.transferNow = true;
+        }
+        #endregion
 
         #region CardboardTrigger
         if (Cardboard.SDK.Triggered)
         {
-            #region removable binds (used for testing)
-            if (Input.GetKeyDown("a"))
-            {
-                headShakeSetup();
-            }
-            if (Input.GetKeyDown("q"))
-            {
-                disorientSetup();
-            }
-            if (Input.GetKeyDown("z"))
-            {
-                sceneTransition tempST = FindObjectOfType<sceneTransition>();
-                tempST.transferNow = true;
-            }
+            #region blur testing
+            blur.enabled = !blur.enabled;
             #endregion
+
 
             //whatever trigger logic we want here
 
