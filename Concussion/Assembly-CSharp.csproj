@@ -73,6 +73,9 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\Scripts\startMovieOnPlay.cs" />
+     <Compile Include="Assets\choiceTrigger.cs" />
+     <Compile Include="Assets\playerController.cs" />
+     <Compile Include="Assets\sceneTransition.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
