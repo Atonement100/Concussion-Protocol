@@ -2,10 +2,15 @@
 using System.Collections;
 
 public class playerController : MonoBehaviour {
-    private bool startTimeSet = false, lerpTo = true;
-    private float startTime, timeDiff;
-    private Quaternion keep, temp;
-    private int lerpRate = 5;
+    public float disorientLength = 10.0f;
+
+    private bool startTimeSet = false, disorientTimeSet = false, lerpTo = true, rotationFixed=true;
+    private float startTime, timeDiff,
+        disorientTime, disorientDiff;
+    private Quaternion keep, temp, disKeep, disTemp;
+    private Quaternion[] tempRotations;
+    private int lerpRate = 5, tRotIt = 0;
+
 
     void Start()
     {
@@ -30,6 +35,26 @@ public class playerController : MonoBehaviour {
         {
             startTime = Time.time;
             startTimeSet = true;
+        }
+    }
+
+    void disorientSetup()
+    {
+        disTemp = GetComponent<Transform>().parent.transform.rotation;
+        disKeep = disTemp;
+
+        tempRotations = new Quaternion[6];
+
+        for (int i = 0; i < tempRotations.Length; i++)
+        {
+            tempRotations[i] = disTemp;
+            tempRotations[i].eulerAngles += new Vector3(disTemp.eulerAngles.x,disTemp.eulerAngles.y, disTemp.eulerAngles.z + (Random.Range(-30,30)));
+        }
+
+        if (!disorientTimeSet)
+        {
+            disorientTime = Time.time;
+            disorientTimeSet = true;
         }
     }
 
@@ -109,6 +134,10 @@ public class playerController : MonoBehaviour {
         {
             headShakeSetup();
         }
+        if (Input.GetKeyDown("q"))
+        {
+            disorientSetup();
+        }
         if (Input.GetKeyDown("z"))
         {
             sceneTransition tempST = FindObjectOfType<sceneTransition>();
@@ -139,6 +168,40 @@ public class playerController : MonoBehaviour {
         {
             lerpTo = true;
             startTimeSet = false;
+        }
+        #endregion
+
+        #region disorientHandler
+        disorientDiff = (Time.time - disorientTime);
+        
+        if (disorientDiff < disorientLength && disorientTimeSet)
+        {
+            //set up rotation of rotations
+            GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(tempRotations[tRotIt], tempRotations[tRotIt+1], (Mathf.Sin(disorientDiff)+1)/2);
+            rotationFixed = false;
+
+            if (disorientDiff > disorientLength/tempRotations.Length && tRotIt+2 < tempRotations.Length)
+            {
+                disorientTime = Time.time;
+                tRotIt++;
+                tempRotations[tRotIt] = GetComponent<Transform>().parent.transform.rotation;
+            }
+            else if (tRotIt+1 > tempRotations.Length)
+            {
+                disorientTimeSet = false;
+            }
+        }
+        else
+        {
+            if (!rotationFixed)
+            {
+                disTemp = GetComponent<Transform>().parent.transform.rotation;
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(disTemp, disKeep, (disorientDiff-disorientLength)/3);
+                if(((disorientDiff-disorientLength)/3) > 1){
+                    rotationFixed = true;
+                }
+            }
+            disorientTimeSet = false;
         }
         #endregion
     }
