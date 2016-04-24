@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{F3C678E9-C0CD-7C89-AAC4-5EE4961D7E2D}") = "Concussion", "Assembly-CSharp-firstpass.csproj", "{6CF43478-5775-A4A8-C586-511DD1444A43}"
+EndProject
 Project("{F3C678E9-C0CD-7C89-AAC4-5EE4961D7E2D}") = "Concussion", "Assembly-CSharp.csproj", "{CCD44F84-05B2-BB46-8A93-3C7CFED055E1}"
 EndProject
 Project("{F3C678E9-C0CD-7C89-AAC4-5EE4961D7E2D}") = "Concussion", "Assembly-CSharp-Editor.csproj", "{E8075A8D-CA68-8430-9A12-EE5585C2E7B2}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CF43478-5775-A4A8-C586-511DD1444A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF43478-5775-A4A8-C586-511DD1444A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF43478-5775-A4A8-C586-511DD1444A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF43478-5775-A4A8-C586-511DD1444A43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCD44F84-05B2-BB46-8A93-3C7CFED055E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCD44F84-05B2-BB46-8A93-3C7CFED055E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD44F84-05B2-BB46-8A93-3C7CFED055E1}.Release|Any CPU.ActiveCfg = Release|Any CPU

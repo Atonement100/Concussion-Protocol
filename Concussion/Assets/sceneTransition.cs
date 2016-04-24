@@ -6,6 +6,8 @@ public class sceneTransition : MonoBehaviour {
     public GameObject player, destination;
     public Texture2D fadeOutTexture;
     public float fadeSpeed = 0.0f;
+    public updateText targetTextScript;
+    public string nextDate = "January 2 2016";
 
     private int drawDepth = -1000;
     private float alpha = 1.0f;
@@ -32,6 +34,10 @@ public class sceneTransition : MonoBehaviour {
         {
             StartCoroutine(sceneTransfer());
         }
+        else
+        {
+            StopCoroutine(sceneTransfer());
+        }
     }
 
     void movePlayer(){
@@ -44,6 +50,8 @@ public class sceneTransition : MonoBehaviour {
         yield return new WaitForSeconds(1);
         movePlayer();
         BeginFade(-1);
+        targetTextScript.changeText(nextDate);
+        transferNow = false;
         yield break;
     }
 
