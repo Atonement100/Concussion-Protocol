@@ -276,7 +276,7 @@ public class CardboardEye : MonoBehaviour {
       }
       customSkybox.material = monoCameraSkybox.material;
     } else if (customSkybox != null) {
-      Destroy(customSkybox);
+      //Destroy(customSkybox);
     }
 
     // Set up side-by-side stereo.
