@@ -3,25 +3,32 @@ using System.Collections;
 
 public class playerController : MonoBehaviour
 {
-    public GameObject cameraRight;
-    public float disorientLength = 10.0f;
+    public GameObject cameraLeft, cameraRight;
+    public float disorientLength = 10.0f, blurLength = 10.0f;
     [Range(5.0f, 89.0f)]
     public float minDisorientAngle = 10.0f, maxDisorientAngle = 30.0f;
 
-    private bool startTimeSet = false, disorientTimeSet = false, lerpTo = true, rotationFixed = true;
+    private bool startTimeSet = false,
+        disorientTimeSet = false,
+        blurTimeSet = false, 
+        lerpTo = true, 
+        rotationFixed = true;
     private float startTime, timeDiff,
-        disorientTime, disorientDiff, diffSum = 0;
-    private Quaternion keep, temp, disKeep, disTemp;
+        disorientTime, disorientDiff, diffSum = 0,
+        blurTime, blurDiff;
+    private Quaternion keep, temp, 
+        disKeep, disTemp;
     private Quaternion[] tempRotations;
     private int lerpRate = 5, tRotIt = 0;
-    private UnityStandardAssets.ImageEffects.Blur blur;
+    private UnityStandardAssets.ImageEffects.Blur blurL, blurR;
 
     void Start()
     {
         keep = GetComponent<Transform>().parent.transform.rotation;
         temp = keep;
 
-        blur = cameraRight.GetComponent<UnityStandardAssets.ImageEffects.Blur>();
+        blurL = cameraLeft.GetComponent<UnityStandardAssets.ImageEffects.Blur>();
+        blurR = cameraRight.GetComponent<UnityStandardAssets.ImageEffects.Blur>();
     }
 
     void headShakeSetup()
@@ -41,6 +48,17 @@ public class playerController : MonoBehaviour
         {
             startTime = Time.time;
             startTimeSet = true;
+        }
+    }
+
+    void blurSetup()
+    {
+        if (!blurTimeSet)
+        {
+            blurTime = Time.time;
+            blurTimeSet = true;
+            blurL.enabled = true;
+            blurR.enabled = true;
         }
     }
 
@@ -83,7 +101,13 @@ public class playerController : MonoBehaviour
         }
         if (Input.GetKeyDown("q"))
         {
-            disorientSetup();
+            if (!disorientTimeSet)
+                disorientSetup();
+        }
+        if (Input.GetKeyDown("w"))
+        {
+            if(!blurTimeSet)
+                blurSetup();
         }
         if (Input.GetKeyDown("z"))
         {
@@ -95,10 +119,6 @@ public class playerController : MonoBehaviour
         #region CardboardTrigger
         if (Cardboard.SDK.Triggered)
         {
-            #region blur testing
-            blur.enabled = !blur.enabled;
-            #endregion
-
 
             //whatever trigger logic we want here
 
@@ -193,15 +213,35 @@ public class playerController : MonoBehaviour
         }
         #endregion
 
+        #region blurHandler
+        blurDiff = Time.time - blurTime;
+        if (blurDiff < blurLength && blurTimeSet)
+        {
+            blurL.iterations = Mathf.FloorToInt(-3*Mathf.Cos(2*blurDiff) + 3);
+            blurR.iterations = Mathf.FloorToInt(-3*Mathf.Cos(2*blurDiff) + 3);
+        }
+        else
+        {
+            //If we keep length at 10 seconds for blur, the function above actually returns it to 0-1 by the time it resets.
+            //If we want != 10 seconds for blur, I will come back and write a fx to return it gracefully to zero before turning off (so that the transition isn't jarring)
+            blurL.iterations = 0;
+            blurL.enabled = false;
+            blurR.iterations = 0;
+            blurR.enabled = false;
+            blurTimeSet = false;
+        }
+        #endregion
+
         #region disorientHandler
         disorientDiff = (Time.time - disorientTime);
 
         if (disorientDiff < disorientLength && disorientTimeSet)
         {
-            //set up rotation of rotations
-            GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(tempRotations[tRotIt], tempRotations[tRotIt + 1], (Mathf.Sin(disorientDiff + diffSum) + 1) / 2);
+            print(GetComponent<Transform>().parent.transform.localRotation);
+            GetComponent<Transform>().parent.transform.localRotation = Quaternion.Lerp(tempRotations[tRotIt], tempRotations[tRotIt + 1], (Mathf.Sin(disorientDiff + diffSum) + 1) / 2);
             rotationFixed = false;
 
+            #region Rotation queue (disabled)
             /*
 
             //will review this to find a better way to make it work with multiple rotations nicely. easy to do with linear lerp but sinusoidal causes conflict
@@ -219,6 +259,7 @@ public class playerController : MonoBehaviour
                 disorientTimeSet = false;
             }
             */
+            #endregion
         }
         else
         {
