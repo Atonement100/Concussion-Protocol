@@ -1,21 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playerController : MonoBehaviour {
+public class playerController : MonoBehaviour
+{
+    public GameObject cameraRight;
     public float disorientLength = 10.0f;
+    [Range(5.0f, 89.0f)]
+    public float minDisorientAngle = 10.0f, maxDisorientAngle = 30.0f;
 
-    private bool startTimeSet = false, disorientTimeSet = false, lerpTo = true, rotationFixed=true;
+    private bool startTimeSet = false, disorientTimeSet = false, lerpTo = true, rotationFixed = true;
     private float startTime, timeDiff,
-        disorientTime, disorientDiff;
+        disorientTime, disorientDiff, diffSum = 0;
     private Quaternion keep, temp, disKeep, disTemp;
     private Quaternion[] tempRotations;
     private int lerpRate = 5, tRotIt = 0;
-
+    private UnityStandardAssets.ImageEffects.Blur blur;
 
     void Start()
     {
         keep = GetComponent<Transform>().parent.transform.rotation;
         temp = keep;
+
+        blur = cameraRight.GetComponent<UnityStandardAssets.ImageEffects.Blur>();
     }
 
     void headShakeSetup()
@@ -29,7 +35,7 @@ public class playerController : MonoBehaviour {
            Random.Range((float)(temp.eulerAngles.y - 50), (float)(temp.eulerAngles.y + 50)),
            //temp.eulerAngles.y,
            temp.eulerAngles.z);
-           //Mathf.Clamp(Random.Range((float)(temp.eulerAngles.z - 50), (float)(temp.eulerAngles.z + 50)),-50,50));
+        //Mathf.Clamp(Random.Range((float)(temp.eulerAngles.z - 50), (float)(temp.eulerAngles.z + 50)),-50,50));
 
         if (!startTimeSet)
         {
@@ -45,11 +51,21 @@ public class playerController : MonoBehaviour {
 
         tempRotations = new Quaternion[6];
 
+        tempRotations[0] = disTemp;
+        tempRotations[1] = disTemp;
+        float disorientAngle = Random.Range(10, 30);
+        tempRotations[0].eulerAngles += new Vector3(disTemp.eulerAngles.x, disTemp.eulerAngles.y, disTemp.eulerAngles.z - disorientAngle);
+        tempRotations[1].eulerAngles += new Vector3(disTemp.eulerAngles.x, disTemp.eulerAngles.y, disTemp.eulerAngles.z + disorientAngle);
+
+        /*
+        //used for disorient rotation cycle, not in use presently
+
         for (int i = 0; i < tempRotations.Length; i++)
         {
             tempRotations[i] = disTemp;
             tempRotations[i].eulerAngles += new Vector3(disTemp.eulerAngles.x,disTemp.eulerAngles.y, disTemp.eulerAngles.z + (Random.Range(-30,30)));
         }
+        */
 
         if (!disorientTimeSet)
         {
@@ -58,11 +74,31 @@ public class playerController : MonoBehaviour {
         }
     }
 
-	void Update () {
+    void Update()
+    {
+        #region removable binds (used for testing)
+        if (Input.GetKeyDown("a"))
+        {
+            headShakeSetup();
+        }
+        if (Input.GetKeyDown("q"))
+        {
+            disorientSetup();
+        }
+        if (Input.GetKeyDown("z"))
+        {
+            sceneTransition tempST = FindObjectOfType<sceneTransition>();
+            tempST.transferNow = true;
+        }
+        #endregion
 
         #region CardboardTrigger
         if (Cardboard.SDK.Triggered)
         {
+            #region blur testing
+            blur.enabled = !blur.enabled;
+            #endregion
+
 
             //whatever trigger logic we want here
 
@@ -76,7 +112,8 @@ public class playerController : MonoBehaviour {
             {
                 GameObject wasHit = hit.transform.gameObject;
                 print("hit");
-                if(wasHit.tag == "decisionTrigger") {
+                if (wasHit.tag == "decisionTrigger")
+                {
                     choiceTrigger picked = wasHit.GetComponent("choiceTrigger") as choiceTrigger;
                     choiceTrigger unpicked = picked.otherTrigger.GetComponent("choiceTrigger") as choiceTrigger;
                     if (picked != null)
@@ -88,7 +125,7 @@ public class playerController : MonoBehaviour {
                             picked.firstChoice = picked.choiceVar;
                             unpicked.firstChoice = picked.choiceVar;
 
-                            if(picked.firstChoice == 0)
+                            if (picked.firstChoice == 0)
                             {
                                 print("first choice was A");
                             }
@@ -101,7 +138,7 @@ public class playerController : MonoBehaviour {
                         {
                             if (picked.firstChoice == 0)
                             {
-                                if(picked.choiceVar == 0)
+                                if (picked.choiceVar == 0)
                                 {
                                     print("first choice was A, second choice was A");
                                 }
@@ -130,33 +167,18 @@ public class playerController : MonoBehaviour {
         }
         #endregion
 
-        if (Input.GetKeyDown("a"))
-        {
-            headShakeSetup();
-        }
-        if (Input.GetKeyDown("q"))
-        {
-            disorientSetup();
-        }
-        if (Input.GetKeyDown("z"))
-        {
-            sceneTransition tempST = FindObjectOfType<sceneTransition>();
-            tempST.transferNow = true;
-        }
-
-
         #region headShakeHandler
-        timeDiff = (Time.time - startTime)*lerpRate;
+        timeDiff = (Time.time - startTime) * lerpRate;
 
         if (timeDiff < 1.1 && startTimeSet)
         {
             if (lerpTo)
             {
-                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(keep, temp, timeDiff*3);
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(keep, temp, timeDiff * 3);
             }
             else
             {
-                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(temp, keep, timeDiff*3);
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(temp, keep, timeDiff * 3);
             }
         }
         else if (lerpTo && startTimeSet)
@@ -173,15 +195,21 @@ public class playerController : MonoBehaviour {
 
         #region disorientHandler
         disorientDiff = (Time.time - disorientTime);
-        
+
         if (disorientDiff < disorientLength && disorientTimeSet)
         {
             //set up rotation of rotations
-            GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(tempRotations[tRotIt], tempRotations[tRotIt+1], (Mathf.Sin(disorientDiff)+1)/2);
+            GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(tempRotations[tRotIt], tempRotations[tRotIt + 1], (Mathf.Sin(disorientDiff + diffSum) + 1) / 2);
             rotationFixed = false;
+
+            /*
+
+            //will review this to find a better way to make it work with multiple rotations nicely. easy to do with linear lerp but sinusoidal causes conflict
+            //however sin(time) etc lerp looks nicer than linear lerp
 
             if (disorientDiff > disorientLength/tempRotations.Length && tRotIt+2 < tempRotations.Length)
             {
+                diffSum += disorientDiff;
                 disorientTime = Time.time;
                 tRotIt++;
                 tempRotations[tRotIt] = GetComponent<Transform>().parent.transform.rotation;
@@ -190,18 +218,22 @@ public class playerController : MonoBehaviour {
             {
                 disorientTimeSet = false;
             }
+            */
         }
         else
         {
             if (!rotationFixed)
             {
                 disTemp = GetComponent<Transform>().parent.transform.rotation;
-                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(disTemp, disKeep, (disorientDiff-disorientLength)/3);
-                if(((disorientDiff-disorientLength)/3) > 1){
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(disTemp, disKeep, (disorientDiff - disorientLength) / 3);
+                if (((disorientDiff - disorientLength) / 3) > 1)
+                {
                     rotationFixed = true;
                 }
             }
             disorientTimeSet = false;
+            tRotIt = 0;
+            diffSum = 0;
         }
         #endregion
     }
