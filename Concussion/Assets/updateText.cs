@@ -13,7 +13,7 @@ public class updateText : MonoBehaviour {
     IEnumerator changeTextHandler(string newText)
     {
         text.text = newText;
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(4.0f);
         text.text = " ";
         yield break;
     }

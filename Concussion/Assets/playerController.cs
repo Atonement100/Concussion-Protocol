@@ -112,7 +112,8 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown("z"))
         {
             sceneTransition tempST = FindObjectOfType<sceneTransition>();
-            tempST.transferNow = true;
+            tempST.levelTransferNow = true;
+            //tempST.transferNow = true;
         }
         #endregion
 

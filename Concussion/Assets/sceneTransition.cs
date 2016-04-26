@@ -2,16 +2,22 @@
 using System.Collections;
 
 public class sceneTransition : MonoBehaviour {
-    public bool transferNow = false;
-    public GameObject player, destination;
+    public bool transferNow = true, levelTransferNow = false;
+    public GameObject player;//, destination;
     public Texture2D fadeOutTexture;
-    public float fadeSpeed = 0.0f;
+    public float fadeSpeed = 0.2f;
     public updateText targetTextScript;
-    public string nextDate = "January 2 2016";
+    public dataManager gameState;
 
+    private string nextDate = "January 2 2016", nextLevel;
     private int drawDepth = -1000;
     private float alpha = 1.0f;
     private int fadeDir = -1;
+
+    void Start()
+    {
+        gameState = Object.FindObjectOfType<dataManager>(); 
+    }
 
     void OnGUI()
     {
@@ -38,20 +44,34 @@ public class sceneTransition : MonoBehaviour {
         {
             StopCoroutine(sceneTransfer());
         }
-    }
 
+        if (levelTransferNow)
+        {
+            StartCoroutine(levelTransfer());
+        }
+    }
+/*
     void movePlayer(){
         player.transform.position = new Vector3(destination.transform.position.x, player.transform.position.y, destination.transform.position.z);
     }
-
+*/
     IEnumerator sceneTransfer()
     {
         BeginFade(1);
         yield return new WaitForSeconds(1);
-        movePlayer();
+        //movePlayer();
         BeginFade(-1);
-        targetTextScript.changeText(nextDate);
+        targetTextScript.changeText(gameState.nextDate);
         transferNow = false;
+        yield break;
+    }
+
+    IEnumerator levelTransfer()
+    {
+        BeginFade(1);
+        yield return new WaitForSeconds(1);
+        gameState.incrementProgress();
+        Application.LoadLevel(gameState.nextLevel);
         yield break;
     }
 

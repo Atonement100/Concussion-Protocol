@@ -29,8 +29,6 @@ public class movementController : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, destinationV[i], dist);
 
             after = transform.position.magnitude;
-            print(after - before);
-
 
             if((after - before) == 0)
             {
