@@ -8,12 +8,14 @@ public class movementController : MonoBehaviour {
 
     private float before, after;
     private int i = 0;
+    private Vector3[] destinationV = new Vector3[10];
 
     void Start()
     {
+        
         for (int i = 0; i < destination.Length; i++)
         {
-            destination[i] = new Vector3(destination[i].x, transform.position.y, destination[i].z);
+            destinationV[i] = new Vector3(destination[i].transform.position.x, transform.position.y, destination[i].transform.position.z);
         }
     }
 
@@ -24,7 +26,7 @@ public class movementController : MonoBehaviour {
 
             float dist = speed * Time.deltaTime;
             transform.LookAt(destination[i].transform);
-            transform.position = Vector3.MoveTowards(transform.position, destination[i].transform.position, dist);
+            transform.position = Vector3.MoveTowards(transform.position, destinationV[i], dist);
 
             after = transform.position.magnitude;
             print(after - before);
