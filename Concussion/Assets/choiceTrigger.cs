@@ -2,16 +2,14 @@
 using System.Collections;
 
 public class choiceTrigger : MonoBehaviour {
-    public int choiceDegree, choiceVar, firstChoice;
-    public GameObject otherTrigger;
+    private int choiceVar;
 
-	// Use this for initialization
-	void Start () {
-        print("loaded");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
+    public int getChoiceVar()
+    {
+        return choiceVar;
+    }
+    public void setChoiceVar(int newChoiceVar)
+    {
+        this.choiceVar = newChoiceVar;
+    }
 }

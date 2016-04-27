@@ -7,6 +7,7 @@ public class playerController : MonoBehaviour
     public float disorientLength = 10.0f, blurLength = 10.0f;
     [Range(5.0f, 89.0f)]
     public float minDisorientAngle = 10.0f, maxDisorientAngle = 30.0f;
+    public dataManager gameState;
 
     private bool startTimeSet = false,
         disorientTimeSet = false,
@@ -24,6 +25,8 @@ public class playerController : MonoBehaviour
 
     void Start()
     {
+        gameState = Object.FindObjectOfType<dataManager>();
+
         keep = GetComponent<Transform>().parent.transform.rotation;
         temp = keep;
 
@@ -136,6 +139,10 @@ public class playerController : MonoBehaviour
                 if (wasHit.tag == "decisionTrigger")
                 {
                     choiceTrigger picked = wasHit.GetComponent("choiceTrigger") as choiceTrigger;
+                    gameState.storyControl(picked.getChoiceVar());
+
+                    #region may remove
+                    /*
                     choiceTrigger unpicked = picked.otherTrigger.GetComponent("choiceTrigger") as choiceTrigger;
                     if (picked != null)
                     {
@@ -181,6 +188,8 @@ public class playerController : MonoBehaviour
                             }
                         }
                     }
+                    */
+                    #endregion
                 }
             }
             else { print("miss"); }
