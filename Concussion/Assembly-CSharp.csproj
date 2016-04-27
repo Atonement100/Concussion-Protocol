@@ -73,6 +73,10 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\choiceTrigger.cs" />
+     <Compile Include="Assets\colliderTrigger.cs" />
+     <Compile Include="Assets\dataManager.cs" />
+     <Compile Include="Assets\destinationHandler.cs" />
+     <Compile Include="Assets\movementController.cs" />
      <Compile Include="Assets\playerController.cs" />
      <Compile Include="Assets\sceneTransition.cs" />
      <Compile Include="Assets\updateText.cs" />
