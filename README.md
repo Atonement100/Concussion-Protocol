@@ -25,3 +25,39 @@ The above stimuli were able to be leveraged in Google Cardboard by adjusting the
 
 # Why VR? 
 Our topic addresses social issues in a context that directly affects the fate of NFL players. Seeing what the player goes through during and after a traumatic brain injury gives the user a look into health affecting sports with a current issue and the effects that these symptoms can have on loved ones.
+
+#Sources
+Conference room model: https://3dwarehouse.sketchup.com/model.html?id=f08748ae18c68a55ae2253302cadc4cd
+
+Man: https://www.assetstore.unity3d.com/en/#!/content/51662
+
+Coffee Mug: https://3dwarehouse.sketchup.com/model.html?id=b7841572364fd9ce1249ffc39a0c3c0b
+
+Animations:
+Mixamo Animator
+
+Character Creation:
+Adobe Fuse Trial (Advisors 1, 2, 3, Doctor, Worried wife, and injured player)
+Autodesk Character Generator
+
+Minute-Maid Park: Football Setup
+https://3dwarehouse.sketchup.com/model.html?id=u7770072b-f86c-4a44-8a63-85dcad4240a7
+
+Low Poly 3D Man (Rigged with Mixamo)
+https://3dwarehouse.sketchup.com/model.html?id=cf0116fd7302f7dfb0e3f4dd541ba755
+
+Kyle XY Trager House
+https://3dwarehouse.sketchup.com/model.html?id=11fc95f6f8f6efd84f52551bb6d0494
+
+Doctor’s Office
+https://3dwarehouse.sketchup.com/model.html?id=9646723bbf608fb871863225e6cc4ec5
+
+Audio:
+https://acapela-box.com/AcaBox/index.php
+
+Classic Skybox Asset:
+https://www.assetstore.unity3d.com/en/#!/content/24923
+
+SportsCenter logo for home television:
+http://cdn1.thecomeback.com/wp-content/uploads/sites/94/2014/02/sclogo.jpg
+
