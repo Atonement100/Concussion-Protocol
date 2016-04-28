@@ -14,6 +14,7 @@ public class officeManager : MonoBehaviour {
         {
             case 0:
                 audioHandler.clip = officeOne;
+                audioHandler.Play();
                 break;
             case 2:
             case 5:
@@ -28,6 +29,8 @@ public class officeManager : MonoBehaviour {
                 audioHandler.Play();
                 break;
             default:
+                audioHandler.clip = officeOne;
+                audioHandler.Play();
                 break;
         }
     }
