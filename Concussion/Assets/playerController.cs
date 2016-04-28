@@ -140,7 +140,7 @@ public class playerController : MonoBehaviour
             #region Raycasting
             //raycast for selection of options
 
-            if (Physics.Raycast(GetComponent<Transform>().parent.transform.position, GetComponent<Transform>().transform.forward, out hit, 30.0f))
+            if (Physics.Raycast(GetComponent<Transform>().parent.transform.position, GetComponent<Transform>().transform.forward, out hit))
             {
                 GameObject wasHit = hit.transform.gameObject;
                 print(wasHit);

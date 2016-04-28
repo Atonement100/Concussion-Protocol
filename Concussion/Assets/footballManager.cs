@@ -32,14 +32,14 @@ public class footballManager : MonoBehaviour {
     void Update()
     {
         movingPlayer = GameObject.FindWithTag("footballImpact").transform;
-        if (choice == 0)
+        if (choice == 1)
         {
             cardboard.transform.position = movingPlayer.position + movingPlayer.forward * 15 + new Vector3 (0.0f,25.0f);
         }
-        else
-        {
-            cubeOne.transform.position = movingPlayer.position + movingPlayer.forward * 20 + new Vector3(0.0f, 25.0f);
-            cubeTwo.transform.position = cubeOne.transform.position - movingPlayer.forward*5 - new Vector3(0.0f,10.0f);
-        }
+  //      else
+  //      {
+  //          cubeOne.transform.position = movingPlayer.position + movingPlayer.forward * 20 + new Vector3(0.0f, 25.0f);
+  //          cubeTwo.transform.position = cubeOne.transform.position - movingPlayer.forward*5 - new Vector3(0.0f,10.0f);
+  //      }
     }	
 }
