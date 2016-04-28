@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -113,6 +119,7 @@
     <Compile Include="Assets\officeManager.cs" />
     <Compile Include="Assets\playerController.cs" />
     <Compile Include="Assets\sceneTransition.cs" />
+    <Compile Include="Assets\transitionOnAudioComplete.cs" />
     <Compile Include="Assets\updateText.cs" />
   </ItemGroup>
   <ItemGroup>

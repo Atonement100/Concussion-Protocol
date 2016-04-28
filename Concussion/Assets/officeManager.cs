@@ -5,6 +5,8 @@ public class officeManager : MonoBehaviour {
     public AudioClip officeOne, officeTwo, officeIllegal;
 
     private dataManager gameState;
+    private float time;
+    private bool illegal;
 
 	void Start () {
         AudioSource audioHandler = GetComponent<AudioSource>();
@@ -15,6 +17,8 @@ public class officeManager : MonoBehaviour {
             case 0:
                 audioHandler.clip = officeOne;
                 audioHandler.Play();
+                GameObject.FindWithTag("disableWife").SetActive(false);
+                GameObject.FindWithTag("disableWife").SetActive(false); //keep two in here.
                 break;
             case 2:
             case 5:
@@ -22,9 +26,13 @@ public class officeManager : MonoBehaviour {
                 GameObject.FindWithTag("primaryCardboard").transform.rotation = GameObject.FindWithTag("alternateCardboard").transform.rotation;
                 audioHandler.clip = officeIllegal;
                 audioHandler.Play();
+                time = Time.time;
+                illegal = true;
                 break;
             case 3:
                 GameObject.FindWithTag("disableMe").SetActive(false);
+                GameObject.FindWithTag("disableWife").SetActive(false);
+                GameObject.FindWithTag("disableWife").SetActive(false); //keep two in here.
                 audioHandler.clip = officeTwo;
                 audioHandler.Play();
                 break;
@@ -35,4 +43,14 @@ public class officeManager : MonoBehaviour {
         }
     }
 	
+    void Update()
+    {
+        if (illegal)
+        {
+            if (Time.time - time > officeIllegal.length) 
+            {
+                FindObjectOfType<sceneTransition>().levelTransferNow = true;
+            }
+        }
+    }
 }

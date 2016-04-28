@@ -144,5 +144,6 @@ public class dataManager : MonoBehaviour
     void Update()
     {
         print(levelLoads);
+        print(choicesMade);
     }
 }

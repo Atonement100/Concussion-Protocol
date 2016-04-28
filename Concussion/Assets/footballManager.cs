@@ -2,11 +2,15 @@
 using System.Collections;
 
 public class footballManager : MonoBehaviour {
+    public GameObject cardboard, cubeOne, cubeTwo;
+
+    private Transform movingPlayer;
     private dataManager gameState;
+    private int choice = 1;
 
 	void Start () {
         gameState = Object.FindObjectOfType<dataManager>();
-        int loads = gameState.getLevelLoads(), choice;
+        int loads = gameState.getLevelLoads();
 
         switch (loads)
         {
@@ -21,12 +25,21 @@ public class footballManager : MonoBehaviour {
                 break;
         }
 
+        movingPlayer = GameObject.FindWithTag("footballImpact").transform;
+      
+	}
+
+    void Update()
+    {
+        movingPlayer = GameObject.FindWithTag("footballImpact").transform;
         if (choice == 0)
         {
-            GameObject.FindWithTag("primaryCardboard").transform.position = GameObject.FindWithTag("alternateCardboard").transform.position;
-            GameObject.FindWithTag("primaryCardboard").transform.rotation = GameObject.FindWithTag("alternateCardboard").transform.rotation;
+            cardboard.transform.position = movingPlayer.position + movingPlayer.forward * 15 + new Vector3 (0.0f,25.0f);
         }
-        
-	}
-	
+        else
+        {
+            cubeOne.transform.position = movingPlayer.position + movingPlayer.forward * 20 + new Vector3(0.0f, 25.0f);
+            cubeTwo.transform.position = cubeOne.transform.position - movingPlayer.forward*5 - new Vector3(0.0f,10.0f);
+        }
+    }	
 }

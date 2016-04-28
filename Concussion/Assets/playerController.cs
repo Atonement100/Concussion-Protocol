@@ -22,6 +22,7 @@ public class playerController : MonoBehaviour
     private Quaternion[] tempRotations;
     private int lerpRate = 5, tRotIt = 0;
     private UnityStandardAssets.ImageEffects.Blur blurL, blurR;
+    private RaycastHit hit;
 
     void Start()
     {
@@ -67,7 +68,7 @@ public class playerController : MonoBehaviour
         }
     }
 
-    void disorientSetup()
+    public void disorientSetup()
     {
         disTemp = GetComponent<Transform>().parent.transform.rotation;
         disKeep = disTemp;
@@ -99,7 +100,6 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
-
         #region removable binds (used for testing)
         if (Input.GetKeyDown("a"))
         {
@@ -139,67 +139,19 @@ public class playerController : MonoBehaviour
 
             #region Raycasting
             //raycast for selection of options
-            RaycastHit hit;
-            if (Physics.Raycast(GetComponent<Transform>().parent.transform.position, GetComponent<Transform>().transform.forward, out hit))
+
+            if (Physics.Raycast(GetComponent<Transform>().parent.transform.position, GetComponent<Transform>().transform.forward, out hit, 30.0f))
             {
                 GameObject wasHit = hit.transform.gameObject;
-                print("hit");
-                if (wasHit.tag == "decisionTrigger")
-                {
-                    choiceTrigger picked = wasHit.GetComponent("choiceTrigger") as choiceTrigger;
-                    gameState.storyControl(picked.getChoiceVar());
-                    sceneTransition tempST = FindObjectOfType<sceneTransition>();
-                    tempST.levelTransferNow = true;
-                    #region may remove
-                    /*
-                    choiceTrigger unpicked = picked.otherTrigger.GetComponent("choiceTrigger") as choiceTrigger;
-                    if (picked != null)
+                print(wasHit);
+                    if (wasHit.tag == "decisionTrigger")
                     {
-                        if (picked.choiceDegree == 0)
-                        {
-                            picked.choiceDegree++;
-                            unpicked.choiceDegree++;
-                            picked.firstChoice = picked.choiceVar;
-                            unpicked.firstChoice = picked.choiceVar;
-
-                            if (picked.firstChoice == 0)
-                            {
-                                print("first choice was A");
-                            }
-                            else
-                            {
-                                print("first choice was B");
-                            }
-                        }
-                        else
-                        {
-                            if (picked.firstChoice == 0)
-                            {
-                                if (picked.choiceVar == 0)
-                                {
-                                    print("first choice was A, second choice was A");
-                                }
-                                else
-                                {
-                                    print("first choice was A, second choice was B");
-                                }
-                            }
-                            else
-                            {
-                                if (picked.choiceVar == 1)
-                                {
-                                    print("first choice was B, second choice was B");
-                                }
-                                else
-                                {
-                                    print("first choice was B, second choice was A");
-                                }
-                            }
-                        }
+                    print("hit");
+                    choiceTrigger picked = wasHit.GetComponent("choiceTrigger") as choiceTrigger;
+                        gameState.storyControl(picked.getChoiceVar());
+                        sceneTransition tempST = FindObjectOfType<sceneTransition>();
+                        tempST.levelTransferNow = true;
                     }
-                    */
-                    #endregion
-                }
             }
             else { print("miss"); }
             #endregion 

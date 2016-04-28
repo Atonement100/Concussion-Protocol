@@ -17,12 +17,16 @@ public class colliderTrigger : MonoBehaviour {
 
 	}
 
+    void level()
+    {
+        FindObjectOfType<dataManager>().storyControl(2);
+        FindObjectOfType<sceneTransition>().levelTransferNow = true;
+    }
+
 	void OnTriggerEnter(Collider other){
-
-
-		if(other.gameObject.tag == "footballImpact"){
-			//print ("hi");
+        if(other.gameObject.tag == "footballImpact"){
 			audioSource.Play ();
+            Invoke("level", scream.length);
 		}
 	}
 }
