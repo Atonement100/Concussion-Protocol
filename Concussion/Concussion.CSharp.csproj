@@ -112,7 +112,10 @@
     <Compile Include="Assets\colliderTrigger.cs" />
     <Compile Include="Assets\dataManager.cs" />
     <Compile Include="Assets\destinationHandler.cs" />
+    <Compile Include="Assets\footballManager.cs" />
+    <Compile Include="Assets\levelManager.cs" />
     <Compile Include="Assets\movementController.cs" />
+    <Compile Include="Assets\officeManager.cs" />
     <Compile Include="Assets\playerController.cs" />
     <Compile Include="Assets\sceneTransition.cs" />
     <Compile Include="Assets\updateText.cs" />

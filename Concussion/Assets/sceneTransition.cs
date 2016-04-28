@@ -5,7 +5,7 @@ public class sceneTransition : MonoBehaviour {
     public bool transferNow = true, levelTransferNow = false;
     public GameObject player;//, destination;
     public Texture2D fadeOutTexture;
-    public float fadeSpeed = 0.2f;
+    public float fadeSpeed = 0.2f, blackoutLength = 10.0f;
     public updateText targetTextScript;
     public dataManager gameState;
 
@@ -32,6 +32,11 @@ public class sceneTransition : MonoBehaviour {
     {
         fadeDir = direction;
         return fadeSpeed;
+    }
+
+    public void causeBlackout()
+    {
+        StartCoroutine(blackout());
     }
 
     void Update()
@@ -69,11 +74,18 @@ public class sceneTransition : MonoBehaviour {
     IEnumerator levelTransfer()
     {
         BeginFade(1);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         gameState.incrementProgress();
         Application.LoadLevel(gameState.nextLevel);
         yield break;
     }
 
-}
+    IEnumerator blackout()
+    {
+        BeginFade(1);
+        yield return new WaitForSeconds(blackoutLength);
+        BeginFade(-1);
+        StopCoroutine(blackout());
+    }
 
+}

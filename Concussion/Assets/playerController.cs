@@ -11,13 +11,13 @@ public class playerController : MonoBehaviour
 
     private bool startTimeSet = false,
         disorientTimeSet = false,
-        blurTimeSet = false, 
-        lerpTo = true, 
+        blurTimeSet = false,
+        lerpTo = true,
         rotationFixed = true;
     private float startTime, timeDiff,
         disorientTime, disorientDiff, diffSum = 0,
         blurTime, blurDiff;
-    private Quaternion keep, temp, 
+    private Quaternion keep, temp,
         disKeep, disTemp;
     private Quaternion[] tempRotations;
     private int lerpRate = 5, tRotIt = 0;
@@ -40,9 +40,11 @@ public class playerController : MonoBehaviour
         keep = temp;
 
         temp.eulerAngles = new Vector3(
-           Random.Range((float)(temp.eulerAngles.x - 50), (float)(temp.eulerAngles.x + 50)),
+           temp.eulerAngles.x - 50,
+           //Random.Range((float)(temp.eulerAngles.x - 50), (float)(temp.eulerAngles.x + 50)),
            //temp.eulerAngles.x,
-           Random.Range((float)(temp.eulerAngles.y - 50), (float)(temp.eulerAngles.y + 50)),
+           temp.eulerAngles.y + 50,
+           //Random.Range((float)(temp.eulerAngles.y - 50), (float)(temp.eulerAngles.y + 50)),
            //temp.eulerAngles.y,
            temp.eulerAngles.z);
         //Mathf.Clamp(Random.Range((float)(temp.eulerAngles.z - 50), (float)(temp.eulerAngles.z + 50)),-50,50));
@@ -97,10 +99,16 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
+
         #region removable binds (used for testing)
         if (Input.GetKeyDown("a"))
         {
             headShakeSetup();
+        }
+        if (Input.GetKeyDown("e"))
+        {
+            sceneTransition tempST = FindObjectOfType<sceneTransition>();
+            tempST.causeBlackout();
         }
         if (Input.GetKeyDown("q"))
         {
@@ -109,7 +117,7 @@ public class playerController : MonoBehaviour
         }
         if (Input.GetKeyDown("w"))
         {
-            if(!blurTimeSet)
+            if (!blurTimeSet)
                 blurSetup();
         }
         if (Input.GetKeyDown("z"))
@@ -123,7 +131,7 @@ public class playerController : MonoBehaviour
         #region CardboardTrigger
         if (Cardboard.SDK.Triggered)
         {
-
+            print("pressed");
             //whatever trigger logic we want here
 
             //movement
@@ -140,7 +148,8 @@ public class playerController : MonoBehaviour
                 {
                     choiceTrigger picked = wasHit.GetComponent("choiceTrigger") as choiceTrigger;
                     gameState.storyControl(picked.getChoiceVar());
-
+                    sceneTransition tempST = FindObjectOfType<sceneTransition>();
+                    tempST.levelTransferNow = true;
                     #region may remove
                     /*
                     choiceTrigger unpicked = picked.otherTrigger.GetComponent("choiceTrigger") as choiceTrigger;
@@ -200,15 +209,15 @@ public class playerController : MonoBehaviour
         #region headShakeHandler
         timeDiff = (Time.time - startTime) * lerpRate;
 
-        if (timeDiff < 1.1 && startTimeSet)
+        if (timeDiff < 1.4 && startTimeSet)
         {
             if (lerpTo)
             {
-                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(keep, temp, timeDiff * 3);
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(keep, temp, timeDiff * 2);
             }
             else
             {
-                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(temp, keep, timeDiff * 3);
+                GetComponent<Transform>().parent.transform.rotation = Quaternion.Lerp(temp, keep, timeDiff * 2);
             }
         }
         else if (lerpTo && startTimeSet)
@@ -227,8 +236,8 @@ public class playerController : MonoBehaviour
         blurDiff = Time.time - blurTime;
         if (blurDiff < blurLength && blurTimeSet)
         {
-            blurL.iterations = Mathf.FloorToInt(-3*Mathf.Cos(2*blurDiff) + 3);
-            blurR.iterations = Mathf.FloorToInt(-3*Mathf.Cos(2*blurDiff) + 3);
+            blurL.iterations = Mathf.FloorToInt(-3 * Mathf.Cos(2 * blurDiff) + 3);
+            blurR.iterations = Mathf.FloorToInt(-3 * Mathf.Cos(2 * blurDiff) + 3);
         }
         else
         {
