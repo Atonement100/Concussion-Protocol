@@ -1,4 +1,4 @@
-# Final-VR-Project
+# Final-VR-Project :football:
 
 A virtual reality simulation built for Google Cardboard featuring NFL public safety and health related to concussion regulations and the injury's effect on the player.
 
@@ -9,6 +9,8 @@ Play Through: https://www.youtube.com/watch?v=0bKo3ow25s0
 Technical Explanation: https://www.youtube.com/watch?v=xjT0Zft3-Io
 
 # Executable
+
+https://drive.google.com/open?id=0Bzd7Pdy6zQQ-UHFZNVByMlpBQ1k
 
 # The socially relevant topic
 Our project is going to place the player directly into a controversial health topic in the NFL today, showing the user the impact concussion regulations can have on player health and safety. The user first makes a regulatory decision as a commissioner in the NFL that will affect a player on the field playing a game. After the choice is made, the player will respectively encounter a situation where they either receive or do not receive a concussion, following with socially relevant outcomes. By simulating the concussion with head jerking, adjusting camera blurs, and an unpredictable audio, the condition the player is in depends completely on the choices of the user. We also present the situation in a social context with the effect the medical condition has on familial relationships. Through exploring concussions through a first person perspective, our project accurately leverages VR and aids the user in understanding what it is like to experience and go through such an injury. A relevant article related to our social topic can be found [here](http://www.nydailynews.com/sports/football/concussions-rise-nfl-league-data-reveals-article-1.2513828).
