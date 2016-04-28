@@ -5,7 +5,7 @@ public class docOfficeManager : MonoBehaviour {
     public AudioClip docOfficeOne, docOfficeTwo;
 
     private dataManager gameState;
-    private bool clipOne;
+    private bool clipOne, disSetupDone = false, boSetupDone = false, transferStarted = false;
     private float time;
 
 	void Start () {
@@ -24,32 +24,38 @@ public class docOfficeManager : MonoBehaviour {
             clipOne = true;
         }
         time = Time.time;
+        gameState.nextLevel = "Office";
 	}
 	
     void Update()
     {
-        if (Time.time - time > 30 && Time.time-time < 31)
+        if (Time.time - time > 30 && Time.time-time < 31 && !disSetupDone)
         {
             FindObjectOfType<playerController>().disorientSetup();
+            FindObjectOfType<playerController>().blurSetup();
+            disSetupDone = true;
         }
-        else if (Time.time - time > 40 && Time.time - time < 41)
+        else if (Time.time - time > 40 && Time.time - time < 41 && !boSetupDone)
         {
             FindObjectOfType<sceneTransition>().causeBlackout();
+            boSetupDone = true;
         }
         if (clipOne)
         {
-            if (Time.time - time > docOfficeOne.length)
+            if (Time.time - time > docOfficeOne.length && !transferStarted)
             {
 
                 FindObjectOfType<sceneTransition>().levelTransferNow = true;
+                transferStarted = true;
             }
         }
         else
         {
-            if (Time.time - time > docOfficeTwo.length)
+            if (Time.time - time > docOfficeTwo.length && !transferStarted)
             {
 
                 FindObjectOfType<sceneTransition>().levelTransferNow = true;
+                transferStarted = true;
             }
         }
     }

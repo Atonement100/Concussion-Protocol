@@ -57,7 +57,7 @@ public class playerController : MonoBehaviour
         }
     }
 
-    void blurSetup()
+    public void blurSetup()
     {
         if (!blurTimeSet)
         {

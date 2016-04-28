@@ -14,7 +14,7 @@ public class transitionOnAudioComplete : MonoBehaviour {
     void Update () {
         if (Time.time - time > clip.length)
         {
-            FindObjectOfType<dataManager>().incrementProgress();
+            FindObjectOfType<dataManager>().nextLevel = "Office";
             FindObjectOfType<sceneTransition>().levelTransferNow = true;
         }
 	}
