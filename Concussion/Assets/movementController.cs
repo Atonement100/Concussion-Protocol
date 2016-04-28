@@ -32,7 +32,7 @@ public class movementController : MonoBehaviour
             before = transform.position.magnitude;
 
             float dist = speed * Time.deltaTime;
-            transform.LookAt(destination[i].transform);
+			transform.LookAt(new Vector3(destination[i].transform.position.x, 0.0f, destination[i].transform.position.z));
             transform.position = Vector3.MoveTowards(transform.position, destinationV[i], dist);
 
             after = transform.position.magnitude;
